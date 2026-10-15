@@ -9,6 +9,8 @@ Medora is an AI medical secretary for doctors and clinics. It will coordinate ap
 The repository currently contains product documentation and engineering infrastructure. No application, patient-data storage, AI integration, or clinical service is implemented. Development starts with reliable scheduling and backend permission enforcement.
 
 - [Product vision and phased scope](docs/product-vision.md)
+- [Domain vocabulary](GLOSSARY.md)
+- [Evolving domain model](docs/domain-model.md)
 - [Contribution workflow](CONTRIBUTING.md)
 - [GitHub rules and automation](docs/github-workflow.md)
 - [Project board](https://github.com/orgs/codeonym-org/projects/3)

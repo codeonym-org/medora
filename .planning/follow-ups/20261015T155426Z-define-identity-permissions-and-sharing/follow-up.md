@@ -4,9 +4,9 @@
   "id": "FU-20261015T155426Z-define-identity-permissions-and-sharing",
   "title": "Define identity, permissions and sharing access rules",
   "kind": "question",
-  "status": "captured",
+  "status": "in-progress",
   "created_at": "2026-10-15T15:54:26Z",
-  "updated_at": "2026-10-15T15:54:26Z",
+  "updated_at": "2026-10-15T16:38:00Z",
   "observed_at": null,
   "reported_by": "assistant; deferral explicitly accepted by user in Q47",
   "owner": null,
@@ -43,7 +43,7 @@
     ".planning/follow-ups/20261015T121349Z-choose-beta-operating-countries/follow-up.md"
   ],
   "duplicate_of": null,
-  "tracking_issue": null,
+  "tracking_issue": "https://github.com/codeonym-org/medora/issues/5",
   "revisit": {
     "trigger": "Before enabling affected record access, membership administration, sharing or booking changes",
     "due_at": null
@@ -52,6 +52,10 @@
     "resolved_at": null,
     "outcome": null,
     "evidence": []
+  },
+  "active_work": {
+    "session": ".planning/decisions/20261015T163800Z-5/session.md",
+    "scope": "Domain terminology and relationships only; remaining detailed policy/access scope stays open"
   }
 }
 ---
@@ -107,3 +111,5 @@ Pending. The deferral is accepted; the detailed choices and implementation are n
 ## Extra notes and history
 
 - 2026-10-15T15:54:26Z — Created from the user-approved Q47 deferral; no external outreach, integration changes or application implementation occurred.
+
+- 2026-10-15T16:38:00Z — Domain-modeling portion started in issue #5 and session 20261015T163800Z-5. Status is in-progress; this does not claim all detailed policies or permissions are being resolved.
