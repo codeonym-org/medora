@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D011",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Who can approve?",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 5,
   "created_at": "2026-10-15T13:46:49Z",
-  "updated_at": "2026-10-15T13:46:49Z",
+  "updated_at": "2026-10-15T13:52:30Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -30,7 +30,8 @@
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D001-first-practice.md",
     ".planning/decisions/20261015T085738Z-3/D009-routine-booking-authority.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T13:52:30Z"
 }
 ---
 
@@ -50,27 +51,29 @@ Q18 — Who can approve?: Can an assigned receptionist confirm or reject appoint
 
 Allow doctors and their authorized receptionists to handle routine approvals. The practice defines the permission; clinical judgment stays with the doctor.
 
-This is an assistant recommendation. The question's alternatives remain open pending the user reply.
+The user accepted this recommendation in the recorded reply, with the cancellation clarification recorded for Q20.
 
 ## User reply — original words
 
-Pending. Question prepared for round 5.
+Round 5 reply, recorded 2026-10-15T13:52:30Z; original message timestamp unavailable:
+
+> q18: ok
 
 ## Interpretation
 
-Pending.
+The user accepts routine appointment approvals by doctors and their authorized/assigned receptionists, with practice-defined permissions. Receptionists are not given independent clinical decision authority.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: doctors and authorized receptionists may confirm or reject routine appointment requests within practice-defined permissions.
 
 ## Consequences and affected components
 
-Affected areas: Role permissions, Review queue, Doctor/receptionist workflow. The answer constrains the next level of product workflow details.
+Confirmed: doctors and authorized receptionists may confirm or reject routine appointment requests within practice-defined permissions. Who configures memberships/permissions and how staff assignments are managed remain open; accepting this choice does not grant all receptionists access to all practices.
 
 ## Assumptions, evidence, and open questions
 
-No duration, role permission, sharing scope, or patient agreement is invented. Relevant details remain unresolved until the user answers. No technology stack is selected.
+Who configures memberships/permissions and how staff assignments are managed remain open; accepting this choice does not grant all receptionists access to all practices.
 
 ## Extra notes and follow-ups
 
@@ -79,3 +82,5 @@ No unrelated follow-up captured for this question.
 ## History
 
 - 2026-10-15T13:46:49Z — Assistant prepared round 5 question from confirmed prerequisites.
+
+- 2026-10-15T13:52:30Z — Recorded round 5 reply and confirmed the choice. Prior interpretation: Pending. Prior decision: Pending.

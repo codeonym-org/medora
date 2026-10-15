@@ -5,7 +5,7 @@
   "title": "Medora product functionality and initial scope",
   "status": "active",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T13:46:49Z",
+  "updated_at": "2026-10-15T13:52:30Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -64,22 +64,28 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D007](D007-basic-patient-profile.md) | 3–4 | Basic profile | D002 | confirmed | Administrative profile, appointment history, visit-specific intake |
 | [D008](D008-staff-chat-privacy.md) | 4 | Staff conversation visibility | D001, D006 | confirmed | Private by default; user may explicitly share |
 | [D009](D009-routine-booking-authority.md) | 4 | Booking confirmation | D001, D002 | confirmed | Reserve provisionally; staff review; notify outcome |
-| [D010](D010-provisional-reservation-policy.md) | 5 / Q17 | Holds and expiry | D009 | unanswered | Pending |
-| [D011](D011-staff-approval-permissions.md) | 5 / Q18 | Approval roles | D001, D009 | unanswered | Pending |
-| [D012](D012-conversation-sharing-scope.md) | 5 / Q19 | Sharing scope | D001, D008 | unanswered | Pending |
-| [D013](D013-replacement-slot-agreement.md) | 5 / Q20 | Replacement-time agreement | D009 | unanswered | Pending |
+| [D010](D010-provisional-reservation-policy.md) | 5 / Q17 | Holds and expiry | D009 | confirmed | Exclusive holds, configured expiry, notify on release |
+| [D011](D011-staff-approval-permissions.md) | 5 / Q18 | Approval roles | D001, D009 | confirmed | Doctor and authorized receptionist approval |
+| [D012](D012-conversation-sharing-scope.md) | 5 / Q19 | Sharing scope | D001, D008 | confirmed | Selected read-only messages to authorized same-practice colleagues |
+| [D013](D013-replacement-slot-agreement.md) | 5 / Q20 | Replacement-time agreement | D009 | confirmed | Patient accepts replacement or may cancel |
+| [D014](D014-review-deadline-outside-working-hours.md) | 6 / Q21 | Requests outside opening hours | D010 | unanswered | Pending |
+| [D015](D015-practice-and-doctor-routing.md) | 6 / Q22 | Which practice are they messaging? | D001, D006 | unanswered | Pending |
+| [D016](D016-booking-for-someone-else.md) | 6 / Q23 | Booking for someone else | D006, D007 | unanswered | Pending |
+| [D017](D017-optional-conversational-intake.md) | 6 / Q24 | Intake without blocking booking | D007, D009 | unanswered | Pending |
 
 ## Current frontier
 
-Round 5: Q17 (D010 reservation exclusivity/expiry), Q18 (D011 approval roles), Q19 (D012 sharing scope), Q20 (D013 agreement to replacement times). All prepared and unanswered. No question reopens the WhatsApp-first conversational core.
+Round 6: Q21 (D014 review deadline outside staffed hours), Q22 (D015 practice-specific/shared WhatsApp entry), Q23 (D016 booking for someone else), Q24 (D017 intake sequence and optionality). All prepared and unanswered.
 
 ## Unresolved or deferred branches
 
-Hold policy, approval permissions, explicit sharing scope, and replacement-slot agreement are open. Patient identity/returning-patient matching, doctor selection, conversational language behavior, intake details and correction, supported additional patient questions, notification failures, human handoff, doctor availability configuration, beta criteria, and first-increment location depth still need product decisions. Geography, technical library selection, and later AI-generated translations remain in follow-ups.
+After the confirmed holds/approval/sharing/replacement choices: review-clock behavior, conversation routing, caregiver booking and optional intake are the current questions. Later branches include exact identity verification, returning-patient matching, additional patient questions, conversation languages, availability configuration, staff handoff, notification failures, beta acceptance criteria, granular membership setup and first-increment location depth. Geography and later technical/translation choices remain in follow-ups. Sharing revocation and ordinary cancellation details remain open.
 
 ## Shared understanding
 
 The core patient journey is natural WhatsApp conversation: the agent handles appointment requests and appointment questions directly. A separate patient booking UI is not required. The agent reserves a slot provisionally; staff confirmation/rejection/changes determine the outcome, which the agent communicates. Staff have private management conversations and may explicitly share material; details remain open. Basic profiling includes identity/contact details, appointment history, patient-reported visit reasons, and short appointment-specific intake; full clinical-record features are outside the first increment. The accepted practice model, three roles, English code, EN/FR/AR/ES UI, and beta early access remain. Geography is explicitly deferred.
+
+Round 5 confirms exclusive pending holds with practice-configured expiry and patient notification on release; doctors and authorized receptionists handle routine review. Sharing initially means selected read-only messages to named authorized colleagues in the same practice. A patient must agree to a replacement time and may cancel if it does not fit their schedule. No monetary cancellation policy is inferred.
 
 ## Final user confirmation
 
@@ -106,3 +112,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T12:13:49Z — Saved round 3 replies verbatim, confirmed the practice model, clarified accepted channel direction, kept profile scope open, captured geography deferral, and prepared round 4.
 
 - 2026-10-15T13:46:49Z — Recorded round 4 replies, corrected the mistaken patient-UI framing, confirmed profile scope/private staff conversations/staff-reviewed reservations, and prepared round 5.
+
+- 2026-10-15T13:52:30Z — Saved round 5 replies; confirmed expiry, approval, sharing and patient replacement/cancellation choices; prepared round 6.

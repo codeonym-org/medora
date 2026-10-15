@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D013",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "A different appointment time",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 5,
   "created_at": "2026-10-15T13:46:49Z",
-  "updated_at": "2026-10-15T13:46:49Z",
+  "updated_at": "2026-10-15T13:52:30Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -28,7 +28,8 @@
   "follow_ups": [],
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D009-routine-booking-authority.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T13:52:30Z"
 }
 ---
 
@@ -48,27 +49,29 @@ Q20 — A different appointment time: If staff proposes a different time—or ch
 
 Yes. Explain the change, propose the new time, and obtain the patient's agreement. Notify them clearly if the original appointment has been cancelled; do not imply a replacement is accepted merely because a message was sent.
 
-This is an assistant recommendation. The question's alternatives remain open pending the user reply.
+The user accepted this recommendation in the recorded reply, with the cancellation clarification recorded for Q20.
 
 ## User reply — original words
 
-Pending. Question prepared for round 5.
+Round 5 reply, recorded 2026-10-15T13:52:30Z; original message timestamp unavailable:
+
+> q20: yeah, and patient is free to cancel if the time does not fit his schedule (work, school etc ..)
 
 ## Interpretation
 
-Pending.
+The user accepts asking the patient to agree to a replacement appointment time and explicitly adds that the patient may cancel if it conflicts with their work, school, or other schedule. This applies to the discussed staff-initiated schedule-change situation; it does not define a monetary cancellation-fee policy or every self-initiated cancellation rule.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: a replacement time requires patient agreement. If it does not fit, the patient may decline and cancel rather than being forced into the replacement. Communicate changes/cancellation honestly and only after successful operations.
 
 ## Consequences and affected components
 
-Affected areas: Rescheduling, Patient agreement, Appointment status. The answer constrains the next level of product workflow details.
+Confirmed: a replacement time requires patient agreement. If it does not fit, the patient may decline and cancel rather than being forced into the replacement. Communicate changes/cancellation honestly and only after successful operations. Replacement-offer expiry, alternate-slot selection, patient cancellation identity checks, and ordinary cancellation-policy details remain open. Do not interpret freedom to cancel as a settled financial policy.
 
 ## Assumptions, evidence, and open questions
 
-No duration, role permission, sharing scope, or patient agreement is invented. Relevant details remain unresolved until the user answers. No technology stack is selected.
+Replacement-offer expiry, alternate-slot selection, patient cancellation identity checks, and ordinary cancellation-policy details remain open. Do not interpret freedom to cancel as a settled financial policy.
 
 ## Extra notes and follow-ups
 
@@ -77,3 +80,5 @@ No unrelated follow-up captured for this question.
 ## History
 
 - 2026-10-15T13:46:49Z — Assistant prepared round 5 question from confirmed prerequisites.
+
+- 2026-10-15T13:52:30Z — Recorded round 5 reply and confirmed the choice. Prior interpretation: Pending. Prior decision: Pending.
