@@ -59,6 +59,10 @@ Use synthetic patient examples and avoid private practice details or credentials
 
 Confirmed planning decisions inform product documents and implementation issues; those should link back to the originating records. A future architecture ADR records the architectural decision and links to relevant planning history. Do not silently replace an existing product constraint or ADR with a new interpretation.
 
+## Feature register
+
+[Product feature register](feature-register.md) preserves the full capability vision and separates confirmed first-increment scope from unsequenced work.
+
 ## Schemas
 
 - [Session schema](templates/session.md): purpose, scope, issue, origin, decision tree, round index, unresolved branches, follow-ups, and final confirmation.
@@ -76,3 +80,4 @@ Confirmed planning decisions inform product documents and implementation issues;
 | Follow-up | Kind | Status | Revisit trigger |
 | --- | --- | --- | --- |
 | [Select i18n/localization libraries](follow-ups/20261015T102802Z-select-internationalization-and-localization-libraries/follow-up.md) | build | captured | Technical stack planning after language requirements |
+| [AI-generated additional UI translations](follow-ups/20261015T110819Z-ai-generated-additional-ui-translations/follow-up.md) | feat | captured | Expansion beyond the initial four languages |

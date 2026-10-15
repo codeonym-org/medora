@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D005",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Early release and readiness to advertise",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 2,
   "created_at": "2026-10-15T10:28:02Z",
-  "updated_at": "2026-10-15T10:28:02Z",
+  "updated_at": "2026-10-15T11:08:19Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -30,7 +30,8 @@
   "follow_ups": [],
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D004-validation-access.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T11:08:19Z"
 }
 ---
 
@@ -50,27 +51,31 @@ Q8 — Ready to advertise: Once Medora is working, would you invite a few practi
 
 Use a limited early release to validate complete doctor, receptionist, and patient workflows, then advertise more broadly. No recruitment or outreach happens without your instruction.
 
-Alternative: open public signup immediately. The unresolved tradeoff is whether real workflow feedback arrives before or during broad adoption. This recommendation is not accepted yet.
+Alternative: open public signup immediately. The unresolved tradeoff is whether real workflow feedback arrives before or during broad adoption. The user has now accepted early access for beta users; the detailed rollout remains to be defined.
 
 ## User reply — original words
 
-Pending. No reply to round 2 has been received.
+
+
+Round 2 reply, recorded 2026-10-15T11:08:19Z; original message timestamp unavailable:
+
+> Q8: Yeah beta users get early access
 
 ## Interpretation
 
-Pending.
+The user accepts early access for beta users before the broader release. They have not named recruited participants, a beta size, duration, paid/free policy, invitation mechanism, or exit criteria.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: beta users get early access. The earlier intent to advertise a functioning product is retained; this answer adds an early-access stage rather than proving practitioner validation has occurred.
 
 ## Consequences and affected components
 
-Determines the early-release audience and feedback path. Detailed readiness criteria depend on the release scope after Q6 is answered.
+Beta scope and readiness criteria can now be explored after core booking/profile behavior is specified. No outreach, recruitment, or deployment is authorized by recording this choice.
 
 ## Assumptions, evidence, and open questions
 
-No practitioner validation or market demand is established. The user's timing statement does not imply rejection of a limited early release. The assistant has not contacted anyone.
+Early access is accepted. Beta size, timing, recruitment, success measures, pricing, and public-release gates are not defined. There are still no confirmed practitioner contacts.
 
 ## Extra notes and follow-ups
 
@@ -79,3 +84,7 @@ The existing no-stack constraint remains. No independent follow-up is needed for
 ## History
 
 - 2026-10-15T10:28:02Z — Assistant prepared Q8 after recording the completed Q4 reply.
+
+- 2026-10-15T11:08:19Z — Recorded round 2 answer; status confirmed.
+  - Previous interpretation: Pending.
+  - Previous decision summary: Pending.

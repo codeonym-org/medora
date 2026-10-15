@@ -6,7 +6,7 @@
   "kind": "build",
   "status": "captured",
   "created_at": "2026-10-15T10:28:02Z",
-  "updated_at": "2026-10-15T10:28:02Z",
+  "updated_at": "2026-10-15T11:08:19Z",
   "observed_at": null,
   "reported_by": "user",
   "owner": null,
@@ -31,7 +31,7 @@
   ],
   "dependencies": [
     "Application stack decision (not yet made)",
-    "Supported UI languages and locale requirements (not yet settled)"
+    "Locale variants and formatting requirements (not yet settled)"
   ],
   "related_follow_ups": [],
   "duplicate_of": null,
@@ -66,7 +66,7 @@ Captured 2026-10-15T10:28:02Z during the first product-grilling round in [D003](
 
 ## Analysis
 
-Confirmed: English code and translated/localized UI through libraries. Unknown: application stack, exact supported languages, locale formats, and right-to-left needs. No library has been evaluated or selected. UI translations and AI conversational language support are separate requirements.
+Confirmed: English code; translated/localized UI initially in English, French, Arabic, and Spanish. The library evaluation needs right-to-left UI support for Arabic. Unknown: application stack, regional locale variants, and formatting policies. No library is selected. UI translation and AI conversation language coverage remain separate requirements.
 
 ## Affected components and boundaries
 
@@ -82,7 +82,7 @@ After product language requirements and the application stack are known, compare
 
 ## Dependencies and revisit trigger
 
-Revisit during stack selection. Use D003 and any subsequent language decisions as inputs; supported language requirements remain unresolved. No due date or owner is assigned.
+Revisit during stack selection. D003 now identifies four initial languages; regional locale/formatting details remain unresolved. No due date or owner is assigned.
 
 ## Acceptance and verification
 
@@ -95,3 +95,5 @@ Pending. Capturing this item does not authorize implementation or change the ses
 ## Extra notes and history
 
 - 2026-10-15T10:28:02Z — Assistant captured the user's requirement as deferred technical work; no dependency was selected or installed.
+
+- 2026-10-15T11:08:19Z — Initial languages updated from the round 2 reply; library selection remains deferred.
