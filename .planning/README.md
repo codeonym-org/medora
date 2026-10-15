@@ -81,3 +81,4 @@ Confirmed planning decisions inform product documents and implementation issues;
 | --- | --- | --- | --- |
 | [Select i18n/localization libraries](follow-ups/20261015T102802Z-select-internationalization-and-localization-libraries/follow-up.md) | build | captured | Technical stack planning after language requirements |
 | [AI-generated additional UI translations](follow-ups/20261015T110819Z-ai-generated-additional-ui-translations/follow-up.md) | feat | captured | Expansion beyond the initial four languages |
+| [Choose beta operating countries](follow-ups/20261015T121349Z-choose-beta-operating-countries/follow-up.md) | question | captured | Before beta eligibility/local operating rules |

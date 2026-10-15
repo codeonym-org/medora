@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D001",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "First practice",
-  "status": "needs-clarification",
+  "status": "confirmed",
   "round": 1,
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T11:08:19Z",
+  "updated_at": "2026-10-15T12:13:49Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -27,7 +27,7 @@
     "docs/product-vision.md",
     "Current conversation: first-round user answers; later user message completes Q4"
   ],
-  "reply_recorded_at": "2026-10-15T11:08:19Z",
+  "reply_recorded_at": "2026-10-15T12:13:49Z",
   "rounds": [
     1,
     2,
@@ -80,21 +80,25 @@ Round 2 reply, recorded 2026-10-15T11:08:19Z; original message timestamp unavail
 
 > Q5: think about far future, what will be the most natural choice here
 
+Round 3 reply, recorded 2026-10-15T12:13:49Z; original message timestamp unavailable:
+
+> q9: ok
+
 ## Interpretation
 
-The user requests a long-term product recommendation instead of choosing a practice grouping. The three roles remain confirmed; the assistant must not report its recommended organization model as user-approved.
+The user accepts the previously described practice/clinic organization model. It supports one or more doctors/receptionists, optional locations, and separate memberships for people working across practices. Access remains practice-scoped; this is not permission to expose records across practices.
 
 ## Decision and rationale
 
-The assistant recommends a practice/clinic organization with one or more locations, doctors, and receptionists. A person can work with multiple practices through separate memberships; record access stays scoped to the practice. A solo practice is the smallest instance. Exact location depth and cross-practice sharing are not first-release commitments.
+Confirmed: practice/clinic organization as the long-term operating model, with the solo practice as the smallest case. Multiple-location delivery timing and granular staff permissions remain to be decided.
 
 ## Consequences and affected components
 
-Practice grouping remains unconfirmed. The requested long-term recommendation is recorded for Q9; roles Doctor, Receptionist, Patient remain confirmed.
+Practice membership and role-aware staff workflows can now be explored. A person may work across practices without automatic cross-practice data access. Locations are supported by the long-term model; the first-release location depth remains open.
 
 ## Assumptions, evidence, and open questions
 
-No practice size, specialty, team-assignment policy, or single primary operator is established. Q5 clarifies the operating model without adding a fourth role. The user reply is the source; no practitioner evidence has been gathered.
+Practice ownership/configuration capabilities, staff assignment scope, shared calendars, staff chat visibility, and first-increment location support remain open. The three user roles are retained; no additional administrator role has been introduced.
 
 ## Extra notes and follow-ups
 
@@ -109,3 +113,7 @@ Technical stack selection is outside this session. No follow-up captured for thi
 - 2026-10-15T11:08:19Z — Recorded round 2 answer; status needs-clarification.
   - Previous interpretation: The user explicitly establishes three roles: Doctor, Receptionist, Patient, and includes doctors and receptionists rather than accepting a doctor-only starting point. The plural forms allow multiple people; they do not establish whether staff share one practice, serve assigned doctors, or operate independently. A single primary daily operator was not selected.
   - Previous decision summary: Confirmed portion: the product has Doctor, Receptionist, and Patient roles. Practice grouping and how receptionists support doctors remain open; the assistant's single-practitioner recommendation was not accepted as a constraint. The user did not supply a further rationale; none is attributed to them.
+
+- 2026-10-15T12:13:49Z — Saved round 3 reply; status confirmed.
+  - Prior interpretation: The user requests a long-term product recommendation instead of choosing a practice grouping. The three roles remain confirmed; the assistant must not report its recommended organization model as user-approved.
+  - Prior decision summary: The assistant recommends a practice/clinic organization with one or more locations, doctors, and receptionists. A person can work with multiple practices through separate memberships; record access stays scoped to the practice. A solo practice is the smallest instance. Exact location depth and cross-practice sharing are not first-release commitments.
