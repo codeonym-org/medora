@@ -73,7 +73,7 @@ Confirmed planning decisions inform product documents and implementation issues;
 
 | Session | Scope | Status |
 | --- | --- | --- |
-| [20261015T085738Z-3](decisions/20261015T085738Z-3/session.md) | Product functionality and initial scope; no technical stack | awaiting-confirmation |
+| [20261015T085738Z-3](decisions/20261015T085738Z-3/session.md) | Product functionality and initial scope; no technical stack | confirmed |
 
 ## Follow-ups
 

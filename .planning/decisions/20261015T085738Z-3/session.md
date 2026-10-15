@@ -3,9 +3,9 @@
   "schema_version": 1,
   "id": "20261015T085738Z-3",
   "title": "Medora product functionality and initial scope",
-  "status": "awaiting-confirmation",
+  "status": "confirmed",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T15:54:26Z",
+  "updated_at": "2026-10-15T15:57:45Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -32,7 +32,8 @@
     ".planning/follow-ups/20261015T155426Z-define-handoff-and-notification-workflows/follow-up.md",
     ".planning/follow-ups/20261015T155426Z-define-profile-fields-and-intake-details/follow-up.md",
     ".planning/follow-ups/20261015T155426Z-define-beta-validation-and-release-gates/follow-up.md"
-  ]
+  ],
+  "confirmation_recorded_at": "2026-10-15T15:57:45Z"
 }
 ---
 
@@ -100,15 +101,15 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D037](D037-keep-original-during-rescheduling.md) | 12 / Q45 | While rescheduling is pending | D009, D013, D032 | confirmed | Keep original until accepted/approved replacement |
 | [D038](D038-optional-group-release-timing.md) | 12 / Q46 | Groups in the first beta | D002, D005, D021, D022 | confirmed | One-to-one beta baseline; verified optional groups later |
 | [D039](D039-focused-design-followups.md) | 12 / Q47 | Detailed design follow-ups | D000, D002, D030 | confirmed | Focused details explicitly deferred with implementation/use gates |
-| [D040](D040-shared-understanding-confirmation.md) | 13 / final review | Shared understanding confirmation | D037–D039 and scope review | unanswered | Awaiting user confirmation |
+| [D040](D040-shared-understanding-confirmation.md) | 13 / final review | Shared understanding confirmation | D037–D039 and scope review | confirmed | User: yes confirmed |
 
 ## Current frontier
 
-Final scope review only: D040 requests explicit confirmation of the consolidated understanding. The capability-level interview is resolved; detailed branches are explicitly deferred to the five new focused follow-ups. No final confirmation is inferred from Q45–Q47.
+Empty for this foundational product interview. The user explicitly confirmed the consolidated understanding. Detailed branches are accepted deferrals linked below; their own sessions will establish future frontiers.
 
 ## Unresolved or deferred branches
 
-Accepted deferrals are linked in [the scope review](scope-review.md) and D039. They cover booking policies, identity/permissions/sharing, communication/handoff/delivery, profile/intake details and beta acceptance. Resolve them before affected implementation or real use. Existing geography/technical follow-ups remain open. The current session awaits final shared-understanding confirmation; no stack or application work has started.
+The accepted focused follow-ups remain open: booking rules; identity/permissions/sharing; handoff/groups/delivery; profile/intake details; beta acceptance. Resolve each before affected implementation or use. Existing geography, translation/library and WhatsApp onboarding follow-ups also remain open. No unresolved detail is treated as completed by this session confirmation.
 
 ## Shared understanding
 
@@ -130,9 +131,15 @@ Round 11 resolves setup: required essentials, optional test and save/resume. A p
 
 Round 12 confirms preservation of the original appointment while a replacement is pending, baseline one-to-one beta handoff before optional verified groups, and explicit durable deferrals for detailed design. The [scope review](scope-review.md) is updated with those choices and the five created follow-ups. Final session confirmation remains pending.
 
+Final confirmation: the user replied "yes confirmed" to the consolidated summary. The [scope review](scope-review.md) is the agreed product foundation; the no-stack scope and detailed follow-up prerequisites remain in force.
+
 ## Final user confirmation
 
-Pending. The consolidated scope and follow-ups are ready for user review; status is awaiting-confirmation. D040 preserves the exact confirmation question. No reply is fabricated or inferred.
+Confirmed, recorded 2026-10-15T15:57:45Z. Source: current conversation, final reply to the consolidated summary and scope review.
+
+> yes confirmed
+
+[D040](D040-shared-understanding-confirmation.md) contains the displayed question, reply and interpretation. The recording timestamp is not an inferred original message-send timestamp. This confirms product understanding; it does not resolve follow-ups or authorize unrelated actions.
 
 ## Related follow-ups and work
 
@@ -185,3 +192,5 @@ Focused detail records:
 - 2026-10-15T15:44:38Z — Saved round 11; linked Owner/Admin role-set amendment, resolved setup/cancellation/backup choices, and prepared a scope review with three remaining scope decisions.
 
 - 2026-10-15T15:54:26Z — Saved Q45–Q47; created five user-approved focused follow-ups; updated scope review; set awaiting-confirmation and prepared D040.
+
+- 2026-10-15T15:57:45Z — Explicit final confirmation saved. Session status changed from awaiting-confirmation to confirmed; detailed follow-ups remain open.

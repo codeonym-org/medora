@@ -1,6 +1,6 @@
 # Product foundation — scope review
 
-This is a review draft of confirmed decisions and explicitly open work. It is not final user confirmation, an implementation plan, or a claim of production readiness. The [session index](session.md) links every decision and original reply.
+This product foundation is confirmed by the user. It records agreed scope and explicitly deferred work; implementation and live-use prerequisites remain in the follow-ups. The [session index](session.md) links every decision and original reply.
 
 ## Platform and people
 
@@ -36,7 +36,7 @@ Build incrementally while preserving the full feature register. Beta users recei
 
 ## Session confirmation
 
-All interview choices are now confirmed or explicitly deferred. The final shared-understanding confirmation is pending in [D040](D040-shared-understanding-confirmation.md). This review is not an implementation or deployment authorization.
+All interview choices are confirmed or explicitly deferred. The user explicitly replied **"yes confirmed"**; [D040](D040-shared-understanding-confirmation.md) preserves the question, reply and interpretation. This is confirmation of the product foundation; deferred decisions remain unresolved.
 
 ## Accepted focused follow-ups
 

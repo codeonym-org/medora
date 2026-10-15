@@ -8,7 +8,7 @@ The brand is professional, intelligent, calm, proactive, discreet, and human. Th
 
 ## Current discovery decisions
 
-These confirmed choices refine the original roadmap. The [consolidated scope review](../.planning/decisions/20261015T085738Z-3/scope-review.md) is awaiting final user confirmation; detailed follow-ups remain prerequisites to affected implementation/use. The [active product session](../.planning/decisions/20261015T085738Z-3/session.md) preserves their questions, user replies, rationale, and unresolved details.
+These confirmed choices refine the original roadmap. The [consolidated scope review](../.planning/decisions/20261015T085738Z-3/scope-review.md) is confirmed by the user; detailed follow-ups remain prerequisites to affected implementation/use. The [active product session](../.planning/decisions/20261015T085738Z-3/session.md) preserves their questions, user replies, rationale, and unresolved details.
 
 - **Patient communication:** Medora connects to a practice-linked line; initially WhatsApp only. A personally used or shared number is a product requirement; supported onboarding modes still need technical evaluation. Patients book and ask appointment questions naturally in chat.
 - **Routing and identity:** A line can represent one doctor or a group. Keep the communication contact separate from the patient, support booking for another person, and reuse verified returning contact-patient details. Staff verify uncertain relationships before existing-record access or changes.
