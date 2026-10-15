@@ -6,7 +6,7 @@
   "kind": "research",
   "status": "captured",
   "created_at": "2026-10-15T14:24:28Z",
-  "updated_at": "2026-10-15T14:24:28Z",
+  "updated_at": "2026-10-15T14:38:24Z",
   "observed_at": null,
   "reported_by": "user",
   "owner": null,
@@ -27,7 +27,8 @@
     "Agent/human communication"
   ],
   "related_decisions": [
-    ".planning/decisions/20261015T085738Z-3/D015-practice-and-doctor-routing.md"
+    ".planning/decisions/20261015T085738Z-3/D015-practice-and-doctor-routing.md",
+    ".planning/decisions/20261015T085738Z-3/D021-staff-takeover-of-patient-chat.md"
   ],
   "dependencies": [
     "Product linked-line scope",
@@ -44,7 +45,12 @@
     "resolved_at": null,
     "outcome": null,
     "evidence": []
-  }
+  },
+  "sources": [
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/groups",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/groups/reference",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/groups/groups-messaging"
+  ]
 }
 ---
 
@@ -68,6 +74,8 @@ Recorded 2026-10-15T14:24:28Z during product discovery, Q22 in [D015](../../deci
 
 A personal/shared phone number is a product ownership/use category, not a confirmed WhatsApp account/API compatibility mode. No provider, account migration path, manual-coexistence behavior, credentials, or implementation has been selected or verified. Consult current official WhatsApp documentation when this work begins.
 
+Current official group eligibility/invitation findings are recorded in [the product feasibility note](../../decisions/20261015T085738Z-3/whatsapp-group-feasibility.md). Remaining integration work includes checking connected-number eligibility, invitation/join behavior, tag/mention delivery, ownership during takeover, and supported return-to-agent behavior. Group support is not assumed for every linked number.
+
 ## Affected components and boundaries
 
 Practice line connection, account/number eligibility, disconnect/reconnect, onboarding instructions and human/agent ownership. Doctor routing is a separate product question.
@@ -86,7 +94,7 @@ Revisit during technical WhatsApp integration planning and before claiming compa
 
 ## Acceptance and verification
 
-Cited official findings identify supported account/number connection modes and operational limitations. A testable onboarding plan and documented product tradeoffs link back here before resolution.
+Cited official findings identify supported account/number connection modes and operational limitations. A testable onboarding plan and documented product tradeoffs link back here before resolution. Verify or explicitly reject native mention/tag triggers and group compatibility for each supported onboarding mode before promising the proposed group handoff. Distinguish message ingestion from replies and authorized state changes.
 
 ## Resolution
 
@@ -95,3 +103,5 @@ Pending. No external app/account connection or patient-data transfer is authoriz
 ## Extra notes and history
 
 - 2026-10-15T14:24:28Z — Captured future integration research without selecting a stack or asserting compatibility.
+
+- 2026-10-15T14:38:24Z — Added per-patient group/tag proposal and official eligibility evidence; integration verification remains open.

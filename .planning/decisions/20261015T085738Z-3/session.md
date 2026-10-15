@@ -5,7 +5,7 @@
   "title": "Medora product functionality and initial scope",
   "status": "active",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T14:24:28Z",
+  "updated_at": "2026-10-15T14:38:24Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -73,18 +73,22 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D015](D015-practice-and-doctor-routing.md) | 6 / Q22 | Which practice are they messaging? | D001, D006 | confirmed | Practice-linked WhatsApp line, personal/shared number |
 | [D016](D016-booking-for-someone-else.md) | 6 / Q23 | Booking for someone else | D006, D007 | confirmed | Communication contact can book for another patient |
 | [D017](D017-optional-conversational-intake.md) | 6 / Q24 | Intake without blocking booking | D007, D009 | confirmed | Reserve with minimum data; optional intake afterwards |
-| [D018](D018-linked-line-doctor-routing.md) | 7 / Q25 | Routing a linked line | D001, D015 | unanswered | Pending |
-| [D019](D019-contact-with-multiple-patient-profiles.md) | 7 / Q26 | Returning patients | D007, D016 | unanswered | Pending |
-| [D020](D020-patient-conversation-languages.md) | 7 / Q27 | Patient conversation languages | D006, D003 | unanswered | Pending |
-| [D021](D021-staff-takeover-of-patient-chat.md) | 7 / Q28 | Human takeover | D006, D011, D015 | unanswered | Pending |
+| [D018](D018-linked-line-doctor-routing.md) | 7 / Q25 | Routing a linked line | D001, D015 | confirmed | Doctor/group routing, preserve patient preference |
+| [D019](D019-contact-with-multiple-patient-profiles.md) | 7 / Q26 | Returning patients | D007, D016 | confirmed | Reuse verified returning-patient details |
+| [D020](D020-patient-conversation-languages.md) | 7 / Q27 | Patient conversation languages | D006, D003 | confirmed | Reply in user language; remember until changed |
+| [D021](D021-staff-takeover-of-patient-chat.md) | 7 / Q28 | Human takeover | D006, D011, D015 | confirmed | Human takeover confirmed; group mechanism proposed |
+| [D022](D022-optional-patient-group-handoff.md) | 8 / Q29 | Optional groups | D021 | unanswered | Pending |
+| [D023](D023-handoff-staff-assignment.md) | 8 / Q30 | Which staff joins? | D001, D011, D021 | unanswered | Pending |
+| [D024](D024-agent-context-during-human-handoff.md) | 8 / Q31 | Agent awareness during handoff | D007, D021 | unanswered | Pending |
+| [D025](D025-remembered-language-preference-owner.md) | 8 / Q32 | Whose language preference? | D016, D020 | unanswered | Pending |
 
 ## Current frontier
 
-Round 7: Q25 (D018 line-to-doctor routing), Q26 (D019 reuse of verified returning-patient details), Q27 (D020 supported patient conversation languages), Q28 (D021 authorized human takeover). All prepared and unanswered.
+Round 8: Q29 (D022 optional groups/fallback), Q30 (D023 responsible staff), Q31 (D024 silent context versus directed-message processing), Q32 (D025 owner of remembered language preference). All prepared and unanswered. Research for group feasibility is complete at the product level; native tag detection remains unverified.
 
 ## Unresolved or deferred branches
 
-Line doctor-routing, reuse of verified patient details, conversational language support and human takeover are the current questions. Later details include identity/representative verification, intake question configuration, practical patient questions beyond appointments, notification failures, availability configuration, beta acceptance criteria, membership/line onboarding, location depth, ordinary cancellation rules and sharing revocation. Geography, technical libraries, later AI translations and WhatsApp onboarding feasibility have durable follow-ups. Exact deadline/cutoff durations remain configurable rather than invented.
+Group dependence/fallback, responsible handoff staff, agent awareness and preference ownership are current product questions. Group invitation/join/lifecycle details depend on whether the optional group flow is accepted. Exact identity verification, practice-configured intake, patient practical questions, availability rules, failed notifications, beta acceptance, membership/location setup, cancellation details and sharing revocation remain open branches. Country selection and technical integration/provider choices stay in follow-ups.
 
 ## Shared understanding
 
@@ -93,6 +97,8 @@ The core patient journey is natural WhatsApp conversation: the agent handles app
 Round 5 confirms exclusive pending holds with practice-configured expiry and patient notification on release; doctors and authorized receptionists handle routine review. Sharing initially means selected read-only messages to named authorized colleagues in the same practice. A patient must agree to a replacement time and may cancel if it does not fit their schedule. No monetary cancellation policy is inferred.
 
 Round 6: Medora attaches to a practice-linked external communication line, with WhatsApp the only initial app. A number may be personal or shared; account/API compatibility is not assumed. The line holder is the communication contact and may book for someone else. Minimum booking information permits a provisional hold; optional conversational intake follows without blocking staff confirmation. The user delegated Q21: use a staffed-hours review budget capped by a pre-appointment cutoff, releasing/notifying at the earlier limit. Numerical settings remain open.
+
+Round 7 confirms line-to-doctor/group routing and reuse of verified returning-patient details. The agent replies in the user's own language, remembers it until changed, and is not limited to the four UI locales by that instruction. Human takeover is confirmed. A per-patient group with staff and tag-driven awareness is a proposal, not an accepted universal mechanism; account eligibility, invitation limits and unverified native tagging need to be reflected in the design.
 
 ## Final user confirmation
 
@@ -110,6 +116,8 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 
 [WhatsApp linked-line onboarding research](../../follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md).
 
+[Official-source WhatsApp group feasibility](whatsapp-group-feasibility.md).
+
 ## History
 
 - 2026-10-15T08:57:38Z — Assistant created session, recorded the supplied scope, and prepared round 1.
@@ -125,3 +133,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T13:52:30Z — Saved round 5 replies; confirmed expiry, approval, sharing and patient replacement/cancellation choices; prepared round 6.
 
 - 2026-10-15T14:24:28Z — Saved round 6 replies, selected the delegated review-clock policy, clarified linked-line/contact concepts, and prepared round 7; integration feasibility is deferred.
+
+- 2026-10-15T14:38:24Z — Saved round 7 replies, researched the proposed group flow against official documentation, and prepared round 8 without treating tentative group behavior as confirmed.

@@ -24,9 +24,13 @@ Keep the full vision discoverable while delivering incrementally. This register 
 | Calendar and authorized health-record integrations | Preserved planned capability; sequencing open | Integration scope, operational boundaries |
 | Analytics and workload insights | Preserved planned capability; sequencing open | Measures and validated baselines |
 | Advanced automation and clinically governed triage | Preserved later vision; no current implementation commitment | Governance, scope and human review requirements |
-| Practice-linked communication line | WhatsApp only initially; personal/shared number requirement confirmed | Line routing, supported onboarding paths, human takeover |
+| Practice-linked communication line | WhatsApp only initially; personal/shared number requirement confirmed | Doctor/group routing confirmed; supported onboarding paths and handoff mechanism open |
 | Booking for someone else | Communication contact may differ from patient, confirmed | Multiple-profile handling and authorization details |
 | Optional conversational intake | After minimum-data reservation; nonessential answers may be skipped | Exact fields and practice templates |
+| Returning-patient convenience | Reuse verified contact-patient details, confirmed | Matching, re-verification and correction details |
+| Agent language preference | Reply in user language and remember until changed, confirmed | Preference owner and uncertain/unsupported language handling |
+| Human takeover | Confirmed capability | Assigned staff, control transfer, optional group proposal, context behavior |
+| Per-patient WhatsApp groups | User proposal; not yet confirmed | Eligibility, invitations, staff audience, tags and lifecycle |
 | AI-generated additional translations | User-requested extension capability | Generation, review, publication, fallback behavior |
 
 Safety, privacy, provenance, authorization, and truthful operation reporting remain cross-cutting requirements, as documented in AGENTS.md. No feature is implemented by virtue of appearing here. Update this register as decisions become explicit; preserve the record of changed or rejected scope.

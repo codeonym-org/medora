@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D018",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Routing a linked line",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 7,
   "created_at": "2026-10-15T14:24:28Z",
-  "updated_at": "2026-10-15T14:24:28Z",
+  "updated_at": "2026-10-15T14:35:28Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -30,7 +30,8 @@
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D001-first-practice.md",
     ".planning/decisions/20261015T085738Z-3/D015-practice-and-doctor-routing.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:35:28Z"
 }
 ---
 
@@ -50,27 +51,29 @@ Q25 — Routing a linked line: Should each linked line be configurable for one d
 
 Yes. A doctor-specific line defaults to that doctor; a shared practice line uses the patient's preference or asks who they want. Never silently substitute another doctor.
 
-This recommendation remains unconfirmed.
+The user reply and current decision are recorded below; earlier recommendation wording is historical and is not automatically accepted.
 
 ## User reply — original words
 
-Pending. Prepared for round 7.
+Round 7 reply, recorded 2026-10-15T14:35:28Z; original message timestamp unavailable:
+
+> q25: ok
 
 ## Interpretation
 
-Pending.
+The user accepts line-level doctor routing: a connected line can represent one doctor or a doctor group, with the doctor-specific default or patient clarification used appropriately.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: configurable one-doctor/group line routing. Respect the requested doctor; do not silently substitute another.
 
 ## Consequences and affected components
 
-Linked lines, Doctor selection, Practice onboarding. Details depend on the answer.
+Confirmed: configurable one-doctor/group line routing. Respect the requested doctor; do not silently substitute another. Default-assignment setup and preferences for patients who have no doctor preference remain to be specified.
 
 ## Assumptions, evidence, and open questions
 
-No routing default, representative authorization, patient conversation language, or human-takeover policy is assumed. Technical stack selection remains excluded.
+Default-assignment setup and preferences for patients who have no doctor preference remain to be specified.
 
 ## Extra notes and follow-ups
 
@@ -79,3 +82,5 @@ No unrelated follow-up introduced by this question.
 ## History
 
 - 2026-10-15T14:24:28Z — Prepared the round 7 question from accepted prerequisites.
+
+- 2026-10-15T14:35:28Z — Saved round 7 reply; status confirmed. Prior interpretation: Pending. Prior decision: Pending.
