@@ -7,7 +7,7 @@
   "status": "confirmed",
   "round": 1,
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T12:13:49Z",
+  "updated_at": "2026-10-15T15:44:38Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -32,6 +32,9 @@
     1,
     2,
     3
+  ],
+  "amended_by": [
+    ".planning/decisions/20261015T085738Z-3/D034-practice-configuration-ownership.md"
   ]
 }
 ---
@@ -92,6 +95,8 @@ The user accepts the previously described practice/clinic organization model. It
 
 Confirmed: practice/clinic organization as the long-term operating model, with the solo practice as the smallest case. Multiple-location delivery timing and granular staff permissions remain to be decided.
 
+Current role-set amendment: [D034](D034-practice-configuration-ownership.md) adds the user-requested explicit practice Owner/Admin account. Doctor, Receptionist and Patient remain the operational roles; the earlier three-role-only framing is no longer the complete role model. The accepted practice/clinic grouping remains valid.
+
 ## Consequences and affected components
 
 Practice membership and role-aware staff workflows can now be explored. A person may work across practices without automatic cross-practice data access. Locations are supported by the long-term model; the first-release location depth remains open.
@@ -117,3 +122,5 @@ Technical stack selection is outside this session. No follow-up captured for thi
 - 2026-10-15T12:13:49Z — Saved round 3 reply; status confirmed.
   - Prior interpretation: The user requests a long-term product recommendation instead of choosing a practice grouping. The three roles remain confirmed; the assistant must not report its recommended organization model as user-approved.
   - Prior decision summary: The assistant recommends a practice/clinic organization with one or more locations, doctors, and receptionists. A person can work with multiple practices through separate memberships; record access stays scoped to the practice. A solo practice is the smallest instance. Exact location depth and cross-practice sharing are not first-release commitments.
+
+- 2026-10-15T15:44:38Z — Linked the partial role-set amendment from Q42; preserved original replies and the organization decision.

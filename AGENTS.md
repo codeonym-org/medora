@@ -1,6 +1,6 @@
 # Medora — Agent Guidance
 
-Medora is a practice-management platform for doctors and clinics, enhanced with integrated AI medical-secretary agents. It coordinates appointments, collects preliminary patient information, and prepares consultation briefings. The doctor retains control over clinical decisions and practice policies.
+Medora is a practice-management platform for doctors and clinics, enhanced with integrated AI medical-secretary agents. It coordinates appointments, collects preliminary patient information, and prepares consultation briefings. The doctor retains control over clinical decisions and practice policies. Practice actors include Owner/Admin, Doctor, Receptionist and Patient; keep administrative authority practice-scoped and distinct from clinical access.
 
 Before planning or implementing product behavior, read [docs/product-vision.md](docs/product-vision.md) for workflows, scope, and acceptance requirements.
 

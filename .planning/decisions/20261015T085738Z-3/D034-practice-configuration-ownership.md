@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D034",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Who manages the practice?",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 11,
   "created_at": "2026-10-15T15:38:29Z",
-  "updated_at": "2026-10-15T15:38:29Z",
+  "updated_at": "2026-10-15T15:44:38Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -36,6 +36,10 @@
     ".planning/decisions/20261015T085738Z-3/D023-handoff-staff-assignment.md",
     ".planning/decisions/20261015T085738Z-3/D030-staff-daily-workspace.md",
     "docs/product-vision.md"
+  ],
+  "reply_recorded_at": "2026-10-15T15:44:38Z",
+  "amends": [
+    ".planning/decisions/20261015T085738Z-3/D001-first-practice.md"
   ]
 }
 ---
@@ -56,27 +60,31 @@ Q42 — Who manages the practice?: Who should control staff invitations, permiss
 
 Use a designated practice-owner capability, with delegated permissions. Keep the existing Doctor/Receptionist/Patient roles; ownership is a responsibility within the practice, not a fourth patient-facing role. Doctors retain approval of clinical intake content.
 
-This recommendation awaits the user choice.
+The current choice below records the user reply; earlier recommendations remain historical.
 
 ## User reply — original words
 
-Pending. Prepared for round 11.
+
+
+Round 11 reply, recorded 2026-10-15T15:44:38Z; original message timestamp unavailable:
+
+> q42: an owner (admin account)
 
 ## Interpretation
 
-Pending.
+The user explicitly selects an Owner/Admin account to manage the practice. This updates the earlier three-operational-role framing and does not merely endorse the assistant's suggested ownership capability without an admin designation. In context, this is a practice owner/admin, not a global platform superadministrator.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: an explicit practice Owner/Admin account controls practice administration such as staff invitations, permissions and connected lines. Doctor, Receptionist and Patient remain operational roles. The user did not specify whether one person/account can combine administrative and clinical roles.
 
 ## Consequences and affected components
 
-Practice ownership, Staff membership, Permissions, Connected lines. Exact policy and permissions follow the user decision.
+Confirmed: an explicit practice Owner/Admin account controls practice administration such as staff invitations, permissions and connected lines. Doctor, Receptionist and Patient remain operational roles. The user did not specify whether one person/account can combine administrative and clinical roles. Fine-grained admin permissions, delegation and role combinations remain open. Administrative control does not automatically settle clinical-record visibility; existing least-privilege and doctor clinical-approval boundaries remain. D001 is partially amended only as to the role set.
 
 ## Assumptions, evidence, and open questions
 
-No new global role, cancellation fee/notice period, backup recipient or response guarantee is invented. Technical stack selection remains excluded.
+Fine-grained admin permissions, delegation and role combinations remain open. Administrative control does not automatically settle clinical-record visibility; existing least-privilege and doctor clinical-approval boundaries remain. D001 is partially amended only as to the role set.
 
 ## Extra notes and follow-ups
 
@@ -85,3 +93,5 @@ No unrelated follow-up introduced by this question.
 ## History
 
 - 2026-10-15T15:38:29Z — Prepared the round 11 question from confirmed prerequisites.
+
+- 2026-10-15T15:44:38Z — Saved round 11 reply and confirmed the explicit choice. Prior interpretation: Pending. Prior decision: Pending.

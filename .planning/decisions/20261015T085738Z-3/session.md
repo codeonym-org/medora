@@ -5,7 +5,7 @@
   "title": "Medora product functionality and initial scope",
   "status": "active",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T15:38:29Z",
+  "updated_at": "2026-10-15T15:44:38Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -56,7 +56,7 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | ID / link | Round | Question | Predecessors | Status | Outcome |
 | --- | --- | --- | --- | --- | --- |
 | [D000](D000-planning-memory-and-scope.md) | 0 | Scope and durable records | None | confirmed | Preserve logs; no stack selection |
-| [D001](D001-first-practice.md) | 1–3 | Roles and practice grouping | Root | confirmed | Practice organization, three roles, scoped memberships |
+| [D001](D001-first-practice.md) | 1–3 | Roles and practice grouping | Root | confirmed | Practice organization; role set amended by D034 |
 | [D002](D002-anchor-problem.md) | 1–2 | Initial scope | Root | confirmed | Preserve vision; basic booking and profiling first |
 | [D003](D003-pilot-market.md) | 1–3 | Market and languages | Root | deferred | Four UI languages confirmed; geography deferred |
 | [D004](D004-validation-access.md) | 1 | Practitioner access | Root | confirmed | No current access; advertise once working |
@@ -86,24 +86,27 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D028](D028-notification-failure-after-confirmation.md) | 9 / Q35 | A confirmation message fails | D009, D013, D015 | confirmed | Keep booking confirmed; delivery failures visible/retried |
 | [D029](D029-first-contact-existing-record-access.md) | 9 / Q36 | Access to existing patient information | D016, D019 | confirmed | Staff verifies uncertain access to existing records |
 | [D030](D030-staff-daily-workspace.md) | 10 / Q37 | The staff workspace | D007, D009, D026 | confirmed | Functional management platform enhanced with AI agents |
-| [D031](D031-practice-setup-before-activation.md) | 10 / Q38 | Practice setup | D015, D023, D026 | needs-clarification | Tentative; mandatory test-booking gate not confirmed |
+| [D031](D031-practice-setup-before-activation.md) | 10 / Q38 | Practice setup | D015, D023, D026 | confirmed | Essential setup; optional test; save/resume |
 | [D032](D032-first-increment-appointment-lifecycle.md) | 10 / Q39 | Changes and cancellations in beta | D002, D006, D013, D029 | confirmed | Basic cancellations/rescheduling in initial beta |
 | [D033](D033-intake-template-and-profile-review.md) | 10 / Q40 | Who controls intake? | D007, D017, D027 | confirmed | Doctor-approved intake, source labels and corrections |
-| [D034](D034-practice-configuration-ownership.md) | 11 / Q42 | Who manages the practice? | D001, D011, D023, D030 | unanswered | Pending |
-| [D035](D035-verified-patient-cancellation.md) | 11 / Q43 | Patient cancellation | D013, D029, D032 | unanswered | Pending |
-| [D036](D036-default-staff-unavailable.md) | 11 / Q44 | Default staff unavailable | D011, D014, D023, D030 | unanswered | Pending |
+| [D034](D034-practice-configuration-ownership.md) | 11 / Q42 | Who manages the practice? | D001, D011, D023, D030 | confirmed | Practice Owner/Admin account; operational roles retained |
+| [D035](D035-verified-patient-cancellation.md) | 11 / Q43 | Patient cancellation | D013, D029, D032 | confirmed | Verified patient cancels immediately; staff notified |
+| [D036](D036-default-staff-unavailable.md) | 11 / Q44 | Default staff unavailable | D011, D014, D023, D030 | confirmed | Configured backup and shared authorized handoff queue |
+| [D037](D037-keep-original-during-rescheduling.md) | 12 / Q45 | While rescheduling is pending | D009, D013, D032 | unanswered | Pending |
+| [D038](D038-optional-group-release-timing.md) | 12 / Q46 | Groups in the first beta | D002, D005, D021, D022 | unanswered | Pending |
+| [D039](D039-focused-design-followups.md) | 12 / Q47 | Detailed design follow-ups | D000, D002, D030 | unanswered | Pending |
 
 ## Current frontier
 
-Round 11: Q41 (D031 clarification: essential configuration with optional test), Q42 (D034 configuration ownership), Q43 (D035 verified cancellation execution), Q44 (D036 backup staff/shared queue). All prepared and unanswered.
+Round 12: Q45 (D037 original booking during rescheduling), Q46 (D038 optional-group delivery timing), Q47 (D039 explicit focused-detail deferrals). All unanswered. The consolidated scope review is prepared; session-level confirmation has not been requested or received yet.
 
 ## Unresolved or deferred branches
 
-The current questions close essential onboarding, configuration authority, cancellation execution and routine handoff coverage. Remaining details include beta acceptance, exact verification evidence, group lifecycle/invocation, sharing revocation, retry escalation, replacement-offer timing and rescheduling preservation. These must be explicitly resolved or deferred in the shared-understanding review; no implementation is authorized by unfinished discovery. Numerical policies remain configurable. Country and technical choices remain in follow-ups.
+Q45–Q47 are current decisions. The [scope review](scope-review.md) lists every remaining identified detailed branch and its proposed revisit point. Those new deferrals remain proposals until Q47 is answered. Existing geography and technical follow-ups remain open. After the current answers, present the resulting shared understanding for explicit session confirmation before implementing it.
 
 ## Shared understanding
 
-The core patient journey is natural WhatsApp conversation: the agent handles appointment requests and appointment questions directly. A separate patient booking UI is not required. The agent reserves a slot provisionally; staff confirmation/rejection/changes determine the outcome, which the agent communicates. Staff have private management conversations and may explicitly share material; details remain open. Basic profiling includes identity/contact details, appointment history, patient-reported visit reasons, and short appointment-specific intake; full clinical-record features are outside the first increment. The accepted practice model, three roles, English code, EN/FR/AR/ES UI, and beta early access remain. Geography is explicitly deferred.
+The core patient journey is natural WhatsApp conversation: the agent handles appointment requests and appointment questions directly. A separate patient booking UI is not required. The agent reserves a slot provisionally; staff confirmation/rejection/changes determine the outcome, which the agent communicates. Staff have private management conversations and may explicitly share material; details remain open. Basic profiling includes identity/contact details, appointment history, patient-reported visit reasons, and short appointment-specific intake; full clinical-record features are outside the first increment. The accepted practice model, operational roles plus the explicit Owner/Admin account (D034), English code, EN/FR/AR/ES UI, and beta early access remain. Geography is explicitly deferred.
 
 Round 5 confirms exclusive pending holds with practice-configured expiry and patient notification on release; doctors and authorized receptionists handle routine review. Sharing initially means selected read-only messages to named authorized colleagues in the same practice. A patient must agree to a replacement time and may cancel if it does not fit their schedule. No monetary cancellation policy is inferred.
 
@@ -116,6 +119,8 @@ Round 8 confirms optional patient groups for eligible consenting participants, w
 Round 9: Medora holds the initial authoritative schedule; external calendar sync can come later. The agent answers approved practical practice questions, with the user identifying reduced embarrassment as a benefit. Confirmed appointment status survives a notification failure; staff see the failure and retries follow policy. Staff verify uncertain/new contact-patient relationships before existing-record access or booking changes; new requests can enter review without disclosure.
 
 Round 10: Medora is a functional practice-management platform enhanced by integrated AI agents. Staff have direct calendars, request queues and profile views alongside assistant chat; this does not change the conversational WhatsApp patient journey or authorize all roadmap features at once. Basic cancellation/rescheduling requests are included in initial beta. Doctors approve intake questions and authorized staff can correct source-labelled information. Practice setup was accepted tentatively; a mandatory test-booking activation gate remains unconfirmed.
+
+Round 11 resolves setup: required essentials, optional test and save/resume. A practice Owner/Admin account is explicit, partially amending the initial three-role framing without implying global platform authority or automatic clinical access. Verified patient cancellations execute immediately with staff notification. Backup staff and a shared authorized handoff queue are accepted. See [the consolidated scope review](scope-review.md) for current rather than historical summaries.
 
 ## Final user confirmation
 
@@ -134,6 +139,8 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 [WhatsApp linked-line onboarding research](../../follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md).
 
 [Official-source WhatsApp group feasibility](whatsapp-group-feasibility.md).
+
+[Consolidated scope review](scope-review.md).
 
 ## History
 
@@ -158,3 +165,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T14:52:33Z — Saved round 9 choices and the product owner's embarrassment rationale; prepared round 10 for initial staff/practice workflows.
 
 - 2026-10-15T15:38:29Z — Saved round 10, clarified the full-platform direction, kept tentative onboarding open, and prepared round 11 operational decisions.
+
+- 2026-10-15T15:44:38Z — Saved round 11; linked Owner/Admin role-set amendment, resolved setup/cancellation/backup choices, and prepared a scope review with three remaining scope decisions.

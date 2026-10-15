@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D036",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Default staff unavailable",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 11,
   "created_at": "2026-10-15T15:38:29Z",
-  "updated_at": "2026-10-15T15:38:29Z",
+  "updated_at": "2026-10-15T15:44:38Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -36,7 +36,8 @@
     ".planning/decisions/20261015T085738Z-3/D023-handoff-staff-assignment.md",
     ".planning/decisions/20261015T085738Z-3/D030-staff-daily-workspace.md",
     "docs/product-vision.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T15:44:38Z"
 }
 ---
 
@@ -56,27 +57,31 @@ Q44 — Default staff unavailable: If the configured default staff member is una
 
 Yes. Notify the configured backup and keep the patient informed that a reply is pending. Do not imply that a human has responded or promise an unsupported response time.
 
-This recommendation awaits the user choice.
+The current choice below records the user reply; earlier recommendations remain historical.
 
 ## User reply — original words
 
-Pending. Prepared for round 11.
+
+
+Round 11 reply, recorded 2026-10-15T15:44:38Z; original message timestamp unavailable:
+
+> q44: yeah
 
 ## Interpretation
 
-Pending.
+The user accepts a configured backup for unavailable default staff and visibility of unresolved handoffs in a shared authorized queue, with honest pending-response communication.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: practices may configure backup staff; unresolved handoffs remain in an authorized shared queue, with backup notification and accurate patient status.
 
 ## Consequences and affected components
 
-Handoff assignment, Staff attention queue, Backup coverage, Patient expectations. Exact policy and permissions follow the user decision.
+Confirmed: practices may configure backup staff; unresolved handoffs remain in an authorized shared queue, with backup notification and accurate patient status. Backup selection details, availability detection, reassignment and escalation timing remain open. No response-time guarantee or all-staff access to private chat is created.
 
 ## Assumptions, evidence, and open questions
 
-No new global role, cancellation fee/notice period, backup recipient or response guarantee is invented. Technical stack selection remains excluded.
+Backup selection details, availability detection, reassignment and escalation timing remain open. No response-time guarantee or all-staff access to private chat is created.
 
 ## Extra notes and follow-ups
 
@@ -85,3 +90,5 @@ No unrelated follow-up introduced by this question.
 ## History
 
 - 2026-10-15T15:38:29Z — Prepared the round 11 question from confirmed prerequisites.
+
+- 2026-10-15T15:44:38Z — Saved round 11 reply and confirmed the explicit choice. Prior interpretation: Pending. Prior decision: Pending.
