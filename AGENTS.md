@@ -1,8 +1,18 @@
 # Medora — Agent Guidance
 
-Medora is an AI medical secretary for doctors and clinics. It coordinates appointments, collects preliminary patient information, and prepares consultation briefings. The doctor retains control over clinical decisions and practice policies.
+Medora is a practice-management platform for doctors and clinics, enhanced with integrated AI medical-secretary agents. It coordinates appointments, collects preliminary patient information, and prepares consultation briefings. The doctor retains control over clinical decisions and practice policies. Practice actors include Owner/Admin, Doctor, Receptionist and Patient; keep administrative authority practice-scoped and distinct from clinical access.
 
 Before planning or implementing product behavior, read [docs/product-vision.md](docs/product-vision.md) for workflows, scope, and acceptance requirements.
+
+The core patient experience is natural conversation with the WhatsApp agent, including booking and appointment inquiries. Medora attaches to a practice-linked external communication line (WhatsApp only initially); keep the communication contact distinct from the patient being booked. Staff have functional calendar, request-review and patient-profile interfaces alongside private assistant conversations. Patient requests create provisional reservations pending staff review; communicate confirmation only after approval and successful backend execution. See the planning session for unresolved workflow details.
+
+## Planning memory
+
+- For every grilling session, create or resume `.planning/decisions/<DATETIME-ISSUE-ID>/` and maintain its session index and individual decision records. Before interviewing, read [.planning/README.md](.planning/README.md) and relevant predecessor decisions. Follow its schemas and lifecycle rules.
+- Record each question, its context and dependencies, the user's actual reply, and your separate interpretation. Save answers before asking the next round; preserve revisions and distinguish confirmed decisions from recommendations and unresolved assumptions.
+- Capture unrelated discoveries and deferred work immediately in `.planning/follow-ups/<DATETIME-title>/`, using the follow-up schema. Link them from the originating session, issue, or PR; a PR comment alone is insufficient. Logging a follow-up does not authorize implementing it.
+- Before resuming planning or beginning related work, consult the planning index and relevant open follow-ups. Keep records in version control, update their outcomes, and obtain explicit confirmation of shared understanding before implementing a grilled design.
+- These instructions apply to all future Medora sessions. Honor each session's declared scope and exclusions.
 
 ## Working in this repository
 

@@ -2,12 +2,32 @@
 
 **Your practice, thoughtfully organized.**
 
-Medora is an AI-powered medical secretary that helps doctors manage daily practice, coordinate appointments, highlight requests needing attention, and prepare structured patient context before consultations. Its purpose is to reduce administrative work and help doctors spend more time caring for patients.
+Medora is a functional practice-management platform enhanced by integrated AI medical-secretary agents. It helps doctors manage daily practice, coordinate appointments, highlight requests needing attention, and prepare structured patient context before consultations. Its purpose is to reduce administrative work and help doctors spend more time caring for patients.
 
 The brand is professional, intelligent, calm, proactive, discreet, and human. The intended market is international, with multilingual product support. Medora should feel like a reliable medical office assistant. Product behavior follows the safety, privacy, and execution boundaries in [AGENTS.md](../AGENTS.md).
 
+## Current discovery decisions
+
+These confirmed choices refine the original roadmap. The [consolidated scope review](../.planning/decisions/20261015T085738Z-3/scope-review.md) is confirmed by the user; detailed follow-ups remain prerequisites to affected implementation/use. The [active product session](../.planning/decisions/20261015T085738Z-3/session.md) preserves their questions, user replies, rationale, and unresolved details.
+
+- **Patient communication:** Medora connects to a practice-linked line; initially WhatsApp only. A personally used or shared number is a product requirement; supported onboarding modes still need technical evaluation. Patients book and ask appointment questions naturally in chat.
+- **Routing and identity:** A line can represent one doctor or a group. Keep the communication contact separate from the patient, support booking for another person, and reuse verified returning contact-patient details. Staff verify uncertain relationships before existing-record access or changes.
+- **Language:** Reply in the speaker's language and remember the speaker/contact preference until changed. This is distinct from patient-profile language and the initial UI locales.
+- **Booking approval:** Reserve provisionally and exclusively, then obtain authorized doctor/receptionist review. Notify the patient of actual confirmation, rejection, or scheduling changes; never call a reservation confirmed.
+- **Reservation expiry:** Count the configured review budget during staffed hours and cap it at a pre-appointment cutoff. Expire at the earlier limit, release the slot, and notify the patient. Exact durations remain practice configuration.
+- **Initial appointment lifecycle:** Basic cancellation and rescheduling requests belong in the first beta alongside booking and profiling. A verified patient cancellation executes immediately, releases the slot after successful cancellation and notifies staff. Keep the original appointment until its replacement is approved and accepted, unless the original is explicitly cancelled or unavailable.
+- **Replacement times:** Obtain patient agreement to a different time. The patient may decline and cancel when the replacement does not fit their schedule.
+- **Profiles and intake:** Begin with administrative identity/contact details, appointment history, patient-reported visit reasons, and short appointment-specific intake. Doctors choose/approve intake questions and authorized staff may correct information with provenance preserved. Gather minimum booking data first; optional intake follows without blocking confirmation merely because nonessential answers are missing.
+- **Staff platform:** Direct calendar, review-queue and patient-profile interfaces operate alongside private assistant chat. AI enhances the platform; the initial product is not limited to a conversation screen.
+- **Staff conversation:** Private management conversations may share selected read-only messages with named authorized same-practice colleagues, respecting patient-record permissions.
+- **Practice activation:** Require essential scheduling/routing/responsible-staff setup; save/resume is supported and a guided test is optional.
+- **Human handoff:** Route to a default staff member configured in Medora, with a configured backup and shared authorized queue for unresolved handoffs. One-to-one human handoff is the beta baseline; optional groups can be added for eligible consenting participants once eligibility, invitations and invocation are verified. During human handling, retain authorized context silently and reply on invocation/control return; invocation alone does not authorize record changes. Native tag behavior and group lifecycle remain unresolved.
+- **Schedule and practice information:** Staff maintain real availability in Medora initially; external calendar sync comes later. Answer approved practical information such as hours, address, fees and preparation, escalating missing information to staff.
+- **Delivery failures:** Keep a successfully confirmed appointment even if notification delivery fails; surface the failure to staff and retry under policy. Do not claim the patient was informed without evidence.
+
 ## Users and control
 
+- **Practice Owner/Admin** manages practice administration, including staff invitations, permissions and linked lines. This user-requested account updates the earlier three-operational-role framing; exact clinical-data permissions and role combinations remain to be designed.
 - **Doctors** manage availability, appointments, practice policies, review queues, and patient preparation. They retain authority over clinical decisions and required approvals.
 - **Patients** request, reschedule, and cancel appointments; communicate preferences and visit reasons; complete relevant intake; and receive confirmed next steps and approved instructions.
 - **Authorized clinic staff**, when supported, coordinate care administration on behalf of doctors within role-specific permissions.
@@ -53,7 +73,7 @@ Practice settings cover working hours, appointment durations, unavailable period
 
 ## Essential workflows
 
-1. **Patient booking:** identify practitioner and appointment type; resolve missing date and timezone details; retrieve availability; offer suitable slots; obtain the patient's selection and minimum required information; complete required confirmation; create the booking; report success only after persistence succeeds; offer configured intake.
+1. **Patient booking:** converse through WhatsApp; identify practitioner and appointment type; resolve missing date and timezone details; retrieve availability; offer suitable slots; obtain the patient's selection and minimum required information; create a provisional reservation and communicate its pending status; route it to staff; communicate confirmation, rejection, or scheduling changes only after the relevant operation succeeds; collect configured intake conversationally. Apply the confirmed exclusive-hold, expiry, staff-approval, and replacement-time agreement rules; exact deadline behavior and notification failures remain under discussion.
 2. **Potentially urgent concern:** gather only appropriate limited clarification; apply the approved escalation protocol; provide emergency guidance without routine scheduling delays when triggered; route clinical review requests to a human; record review status and communicate confirmed next steps.
 3. **Doctor's morning:** retrieve the authorized schedule; summarize appointments, pending reviews, incomplete intake, cancellations, conflicts, and changes; provide upcoming patient briefings and actionable administrative tasks.
 4. **Cancellation:** identify the appointment; verify identity and authorization through the practice's approved process; explain applicable policy; obtain required confirmation; cancel; communicate success; assess eligible waiting-list candidates for the released slot; update records.
