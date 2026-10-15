@@ -1,0 +1,37 @@
+name: Bug report
+description: Report behavior that does not match Medora's documented requirements.
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: This repository is public. Use fictional data only; omit patient identities, medical records, credentials, and private practice information.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Explain the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Provide a minimal example using synthetic data.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Relevant browser, operating system, and configured timezone.
+  - type: textarea
+    id: output
+    attributes:
+      label: Sanitized output
+      description: Review logs and screenshots for sensitive data before attaching them.

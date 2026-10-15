@@ -1,0 +1,9 @@
+Repository automation is adapted from codeonym-oss/acli-py:
+https://github.com/codeonym-oss/acli-py
+
+This includes scripts/check_branch_name.py, workflow conventions, issue/PR
+templates, and contribution conventions. Its MIT license is preserved in
+third_party/acli-py-LICENSE and continues to apply to adapted material.
+
+Original Medora materials are governed by LICENSE. The restrictive project
+notice does not revoke permissions granted by third-party licenses.

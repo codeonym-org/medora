@@ -1,0 +1,32 @@
+name: Feature request
+description: Propose an improvement to Medora.
+labels: [enhancement, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: Use fictional examples. Do not include real patient or private practice information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Which doctor, patient, or staff workflow needs improvement?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the desired behavior, permissions, and relevant confirmation flow.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Observable outcomes, including relevant failure and authorization cases.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

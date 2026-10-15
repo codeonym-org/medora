@@ -1,0 +1,25 @@
+# Local tools, secrets, patient data, and generated files
+.agents/
+.codex/
+.aws/
+.scratch/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.sqlite
+*.sqlite3
+*.db
+*.log
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+node_modules/
+dist/
+build/
+coverage/
+.DS_Store
