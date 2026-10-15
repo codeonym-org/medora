@@ -5,7 +5,7 @@
   "title": "Medora product functionality and initial scope",
   "status": "active",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T12:13:49Z",
+  "updated_at": "2026-10-15T13:46:49Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -56,26 +56,30 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | --- | --- | --- | --- | --- | --- |
 | [D000](D000-planning-memory-and-scope.md) | 0 | Scope and durable records | None | confirmed | Preserve logs; no stack selection |
 | [D001](D001-first-practice.md) | 1–3 | Roles and practice grouping | Root | confirmed | Practice organization, three roles, scoped memberships |
-| [D002](D002-anchor-problem.md) | 1–2 | Product benefits and launch breadth | Root | confirmed | Preserve all features; basic booking and profiling first |
+| [D002](D002-anchor-problem.md) | 1–2 | Initial scope | Root | confirmed | Preserve vision; basic booking and profiling first |
 | [D003](D003-pilot-market.md) | 1–3 | Market and languages | Root | deferred | Four UI languages confirmed; geography deferred |
 | [D004](D004-validation-access.md) | 1 | Practitioner access | Root | confirmed | No current access; advertise once working |
-| [D005](D005-release-readiness.md) | 2 | Early-release approach | D004 | confirmed | Beta early access |
-| [D006](D006-booking-entry.md) | 3–4 / Q13 | Patient/staff booking entry | D002 | needs-clarification | Patient messaging, private staff chat; exact channel scope open |
-| [D007](D007-basic-patient-profile.md) | 3–4 / Q15 | Profile content | D002 | needs-clarification | User unsure; concrete scope proposed |
-| [D008](D008-staff-chat-privacy.md) | 4 / Q14 | Staff chat visibility | D001, accepted staff-realm portion of D006 | unanswered | Pending |
-| [D009](D009-routine-booking-authority.md) | 4 / Q16 | Booking approval policy | D001, D002 | unanswered | Pending |
+| [D005](D005-release-readiness.md) | 2 | Early release | D004 | confirmed | Beta early access |
+| [D006](D006-booking-entry.md) | 3–4 | Patient/staff booking entry | D002 | confirmed | WhatsApp conversation is the core patient journey; private staff chat |
+| [D007](D007-basic-patient-profile.md) | 3–4 | Basic profile | D002 | confirmed | Administrative profile, appointment history, visit-specific intake |
+| [D008](D008-staff-chat-privacy.md) | 4 | Staff conversation visibility | D001, D006 | confirmed | Private by default; user may explicitly share |
+| [D009](D009-routine-booking-authority.md) | 4 | Booking confirmation | D001, D002 | confirmed | Reserve provisionally; staff review; notify outcome |
+| [D010](D010-provisional-reservation-policy.md) | 5 / Q17 | Holds and expiry | D009 | unanswered | Pending |
+| [D011](D011-staff-approval-permissions.md) | 5 / Q18 | Approval roles | D001, D009 | unanswered | Pending |
+| [D012](D012-conversation-sharing-scope.md) | 5 / Q19 | Sharing scope | D001, D008 | unanswered | Pending |
+| [D013](D013-replacement-slot-agreement.md) | 5 / Q20 | Replacement-time agreement | D009 | unanswered | Pending |
 
 ## Current frontier
 
-Round 4: Q13 (D006 completing booking inside WhatsApp versus linking out), Q14 (D008 staff conversation privacy), Q15 (D007 concrete profile boundary), Q16 (D009 routine-booking approval). All are prepared and unanswered. Geography is explicitly deferred, not repeatedly assumed or asked.
+Round 5: Q17 (D010 reservation exclusivity/expiry), Q18 (D011 approval roles), Q19 (D012 sharing scope), Q20 (D013 agreement to replacement times). All prepared and unanswered. No question reopens the WhatsApp-first conversational core.
 
 ## Unresolved or deferred branches
 
-First patient channel and conversation completion, staff transcript visibility, profile content, and routine booking approval are open. Once these are settled, explore patient identity, staff roles, scheduling constraints, changes/cancellations, handoff/failure behavior, conversational languages, and beta readiness. Geography, library selection, and additional AI translations have durable follow-ups. Granular membership and first-increment location depth remain open.
+Hold policy, approval permissions, explicit sharing scope, and replacement-slot agreement are open. Patient identity/returning-patient matching, doctor selection, conversational language behavior, intake details and correction, supported additional patient questions, notification failures, human handoff, doctor availability configuration, beta criteria, and first-increment location depth still need product decisions. Geography, technical library selection, and later AI-generated translations remain in follow-ups.
 
 ## Shared understanding
 
-Confirmed: practice/clinic organization model; Doctor, Receptionist, Patient roles; preserve full feature vision; start with basic booking and profiling; English code and EN/FR/AR/ES UI; beta early access. Both patients and staff initiate booking: patients likely through WhatsApp and other messaging apps, staff through a private management chat. Which channels are mandatory initially and the privacy boundary between staff conversations remain open. Profiling content remains uncertain. Beta geography is explicitly undecided and deferred.
+The core patient journey is natural WhatsApp conversation: the agent handles appointment requests and appointment questions directly. A separate patient booking UI is not required. The agent reserves a slot provisionally; staff confirmation/rejection/changes determine the outcome, which the agent communicates. Staff have private management conversations and may explicitly share material; details remain open. Basic profiling includes identity/contact details, appointment history, patient-reported visit reasons, and short appointment-specific intake; full clinical-record features are outside the first increment. The accepted practice model, three roles, English code, EN/FR/AR/ES UI, and beta early access remain. Geography is explicitly deferred.
 
 ## Final user confirmation
 
@@ -100,3 +104,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T11:08:19Z — Round 2 replies saved verbatim. Initial scope/languages/beta access recorded; organization recommendation and round 3 questions prepared. Full feature register and translation-extension follow-up added.
 
 - 2026-10-15T12:13:49Z — Saved round 3 replies verbatim, confirmed the practice model, clarified accepted channel direction, kept profile scope open, captured geography deferral, and prepared round 4.
+
+- 2026-10-15T13:46:49Z — Recorded round 4 replies, corrected the mistaken patient-UI framing, confirmed profile scope/private staff conversations/staff-reviewed reservations, and prepared round 5.

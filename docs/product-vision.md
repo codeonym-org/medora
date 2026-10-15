@@ -2,6 +2,8 @@
 
 **Your practice, thoughtfully organized.**
 
+The core patient experience is natural conversation with the WhatsApp agent: patients request appointments and ask about their appointments directly in chat. Staff work through private management conversations on Medora and may intentionally share conversation material subject to permissions. A patient request leads to a provisional reservation; staff confirm, reject, or change scheduling, and the agent communicates the actual outcome. A provisional reservation must never be presented as a confirmed appointment. The detailed hold, sharing, and replacement-time policies remain under discussion in [the active product session](../.planning/decisions/20261015T085738Z-3/session.md).
+
 Medora is an AI-powered medical secretary that helps doctors manage daily practice, coordinate appointments, highlight requests needing attention, and prepare structured patient context before consultations. Its purpose is to reduce administrative work and help doctors spend more time caring for patients.
 
 The brand is professional, intelligent, calm, proactive, discreet, and human. The intended market is international, with multilingual product support. Medora should feel like a reliable medical office assistant. Product behavior follows the safety, privacy, and execution boundaries in [AGENTS.md](../AGENTS.md).
@@ -53,7 +55,7 @@ Practice settings cover working hours, appointment durations, unavailable period
 
 ## Essential workflows
 
-1. **Patient booking:** identify practitioner and appointment type; resolve missing date and timezone details; retrieve availability; offer suitable slots; obtain the patient's selection and minimum required information; complete required confirmation; create the booking; report success only after persistence succeeds; offer configured intake.
+1. **Patient booking:** converse through WhatsApp; identify practitioner and appointment type; resolve missing date and timezone details; retrieve availability; offer suitable slots; obtain the patient's selection and minimum required information; create a provisional reservation and communicate its pending status; route it to staff; communicate confirmation, rejection, or scheduling changes only after the relevant operation succeeds; collect configured intake conversationally. Hold expiry, approval roles, and replacement-time agreement remain open decisions in the active product session.
 2. **Potentially urgent concern:** gather only appropriate limited clarification; apply the approved escalation protocol; provide emergency guidance without routine scheduling delays when triggered; route clinical review requests to a human; record review status and communicate confirmed next steps.
 3. **Doctor's morning:** retrieve the authorized schedule; summarize appointments, pending reviews, incomplete intake, cancellations, conflicts, and changes; provide upcoming patient briefings and actionable administrative tasks.
 4. **Cancellation:** identify the appointment; verify identity and authorization through the practice's approved process; explain applicable policy; obtain required confirmation; cancel; communicate success; assess eligible waiting-list candidates for the released slot; update records.

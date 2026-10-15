@@ -4,6 +4,8 @@ Medora is an AI medical secretary for doctors and clinics. It coordinates appoin
 
 Before planning or implementing product behavior, read [docs/product-vision.md](docs/product-vision.md) for workflows, scope, and acceptance requirements.
 
+The core patient experience is natural conversation with the WhatsApp agent, including booking and appointment inquiries. Staff use private management conversations. Patient requests create provisional reservations pending staff review; communicate confirmation only after approval and successful backend execution. See the planning session for unresolved workflow details.
+
 ## Planning memory
 
 - For every grilling session, create or resume `.planning/decisions/<DATETIME-ISSUE-ID>/` and maintain its session index and individual decision records. Before interviewing, read [.planning/README.md](.planning/README.md) and relevant predecessor decisions. Follow its schemas and lifecycle rules.
