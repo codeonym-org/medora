@@ -73,4 +73,6 @@ Confirmed planning decisions inform product documents and implementation issues;
 
 ## Follow-ups
 
-No follow-ups captured yet. New records are indexed here; empty directories do not represent completed discovery.
+| Follow-up | Kind | Status | Revisit trigger |
+| --- | --- | --- | --- |
+| [Select i18n/localization libraries](follow-ups/20261015T102802Z-select-internationalization-and-localization-libraries/follow-up.md) | build | captured | Technical stack planning after language requirements |

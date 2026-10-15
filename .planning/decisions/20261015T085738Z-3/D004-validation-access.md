@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D004",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Access to real users",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 1,
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T08:57:38Z",
+  "updated_at": "2026-10-15T10:28:02Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -24,8 +24,10 @@
   ],
   "follow_ups": [],
   "sources": [
-    "docs/product-vision.md"
-  ]
+    "docs/product-vision.md",
+    "Current conversation: first-round user answers; later user message completes Q4"
+  ],
+  "reply_recorded_at": "2026-10-15T10:28:02Z"
 }
 ---
 
@@ -49,23 +51,31 @@ This is an assistant recommendation, not a user decision. Alternatives remain op
 
 ## User reply — original words
 
-Pending. Question prepared for round 1; no user reply received.
+Recorded 2026-10-15T10:28:02Z. Source: current conversation; original message timestamps were not supplied.
+
+Earlier incomplete reply, preserved:
+
+> Q4: Not yet, I will
+
+Completed reply in the following user message:
+
+> Q4: Not yet, I will advertise my product when its live and functionning;
 
 ## Interpretation
 
-Pending.
+The user currently has no practitioners available for interviews or an early pilot and intends to advertise after the product is live and functioning. The latest reply completes the interrupted earlier answer. It does not say that a limited early release is forbidden or that workflows have already been validated.
 
 ## Decision and rationale
 
-Pending.
+No current practitioner access is established; the user plans to advertise once the product is live and functioning. This describes current access and intended timing, not proof of demand or a final release-validation policy. The user did not supply a further rationale; none is attributed to them.
 
 ## Consequences and affected components
 
-Affected product areas: Product validation, Pilot planning. Downstream choices will be narrowed after the answer.
+Treat product workflow assumptions as unvalidated. Ask what release approach should establish readiness before broad advertising; do not recruit or contact anyone automatically.
 
 ## Assumptions, evidence, and open questions
 
-The product vision is the source for the broad purpose. No answer to this question is established. Evidence from practitioners remains to be identified.
+What “live and functioning” requires, whether a limited early release is acceptable, and how feedback will be gathered remain open. D005/Q8 covers release approach. The user reply is the source; no practitioner evidence has been gathered.
 
 ## Extra notes and follow-ups
 
@@ -74,3 +84,5 @@ Technical stack selection is outside this session. No follow-up captured for thi
 ## History
 
 - 2026-10-15T08:57:38Z — Assistant prepared the first-round question; user response is pending.
+
+- 2026-10-15T10:28:02Z — Assistant saved the actual reply and its interpretation; status is confirmed. Original recommendations remain historical proposals.
