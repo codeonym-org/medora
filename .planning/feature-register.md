@@ -10,7 +10,7 @@ Keep the full vision discoverable while delivering incrementally. This register 
 | English, French, Arabic, Spanish UI | Initial language list confirmed | Locale variants, language switching, translation review |
 | Beta-user early access | Confirmed rollout stage | Recruitment, beta scope, success measures, exit criteria |
 | Availability and calendar management | Medora is initial scheduling source, confirmed | Minimum setup, controls and calendar views |
-| Rescheduling and cancellation | Basic cancellation/rescheduling requests in initial beta, confirmed | Immediate verified cancellation and staff notice confirmed; pending-reschedule preservation open |
+| Rescheduling and cancellation | Basic cancellation/rescheduling requests in initial beta, confirmed | Immediate verified cancellation and staff notice; keep original while replacement is pending |
 | Booking confirmations | Staff approval required after provisional reservation | Authorized staff review and staffed-hours/cutoff policy chosen; numerical settings open; confirmed booking survives visible/retried delivery failure |
 | Reminders and notification preferences | Preserved planned capability; sequencing open | Timing, channels, opt-in behavior |
 | Short patient intake and structured summaries | Doctor-approved intake, source-labelled profiles and staff corrections confirmed | Exact templates, correction rights, summary depth |
@@ -31,7 +31,7 @@ Keep the full vision discoverable while delivering incrementally. This register 
 | Returning-patient convenience | Reuse verified contact-patient details, confirmed | Staff verifies uncertain relationships before existing-record access/changes; exact evidence/corrections open |
 | Agent language preference | Reply in user language and remember until changed, confirmed | Speaking-account/contact owner confirmed; uncertain/unsupported language handling open |
 | Human takeover | Confirmed capability | Configured default/backup staff, authorized queue and silent context confirmed; transfer/failure details open |
-| Per-patient WhatsApp groups | Optional for eligible consenting participants; one-to-one fallback confirmed | Configured default staff; invitations, tags and lifecycle details open |
+| Per-patient WhatsApp groups | Optional verified extension after baseline one-to-one beta handoff | Configured default staff; invitations, tags and lifecycle details open |
 | Practical practice questions | Approved hours/address/fees/preparation answers confirmed | Information maintenance, review and uncertainty handling |
 | AI-generated additional translations | User-requested extension capability | Generation, review, publication, fallback behavior |
 

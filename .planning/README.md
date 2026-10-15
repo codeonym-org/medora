@@ -73,7 +73,7 @@ Confirmed planning decisions inform product documents and implementation issues;
 
 | Session | Scope | Status |
 | --- | --- | --- |
-| [20261015T085738Z-3](decisions/20261015T085738Z-3/session.md) | Product functionality and initial scope; no technical stack | active |
+| [20261015T085738Z-3](decisions/20261015T085738Z-3/session.md) | Product functionality and initial scope; no technical stack | awaiting-confirmation |
 
 ## Follow-ups
 
@@ -83,3 +83,8 @@ Confirmed planning decisions inform product documents and implementation issues;
 | [AI-generated additional UI translations](follow-ups/20261015T110819Z-ai-generated-additional-ui-translations/follow-up.md) | feat | captured | Expansion beyond the initial four languages |
 | [Choose beta operating countries](follow-ups/20261015T121349Z-choose-beta-operating-countries/follow-up.md) | question | captured | Before beta eligibility/local operating rules |
 | [Validate WhatsApp linked-line onboarding](follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md) | research | captured | Technical integration planning before promising connection modes |
+| [Define detailed booking and rescheduling policies](follow-ups/20261015T155426Z-define-detailed-booking-policies/follow-up.md) | question | captured | Before implementing the affected scheduling policies or activating them for a practice |
+| [Define identity, permissions and sharing access rules](follow-ups/20261015T155426Z-define-identity-permissions-and-sharing/follow-up.md) | question | captured | Before enabling affected record access, membership administration, sharing or booking changes |
+| [Define handoff, group and notification workflows](follow-ups/20261015T155426Z-define-handoff-and-notification-workflows/follow-up.md) | question | captured | Before implementing or enabling the corresponding handoff, group or delivery-failure flows |
+| [Define profile, intake and correction details](follow-ups/20261015T155426Z-define-profile-fields-and-intake-details/follow-up.md) | question | captured | Before implementing affected profile/intake behavior or collecting real patient intake |
+| [Define beta validation and public-release criteria](follow-ups/20261015T155426Z-define-beta-validation-and-release-gates/follow-up.md) | question | captured | Before inviting real beta practices or claiming readiness for broader advertising |

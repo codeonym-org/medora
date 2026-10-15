@@ -3,9 +3,9 @@
   "schema_version": 1,
   "id": "20261015T085738Z-3",
   "title": "Medora product functionality and initial scope",
-  "status": "active",
+  "status": "awaiting-confirmation",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T15:44:38Z",
+  "updated_at": "2026-10-15T15:54:26Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -26,7 +26,12 @@
     ".planning/follow-ups/20261015T102802Z-select-internationalization-and-localization-libraries/follow-up.md",
     ".planning/follow-ups/20261015T110819Z-ai-generated-additional-ui-translations/follow-up.md",
     ".planning/follow-ups/20261015T121349Z-choose-beta-operating-countries/follow-up.md",
-    ".planning/follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md"
+    ".planning/follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md",
+    ".planning/follow-ups/20261015T155426Z-define-detailed-booking-policies/follow-up.md",
+    ".planning/follow-ups/20261015T155426Z-define-identity-permissions-and-sharing/follow-up.md",
+    ".planning/follow-ups/20261015T155426Z-define-handoff-and-notification-workflows/follow-up.md",
+    ".planning/follow-ups/20261015T155426Z-define-profile-fields-and-intake-details/follow-up.md",
+    ".planning/follow-ups/20261015T155426Z-define-beta-validation-and-release-gates/follow-up.md"
   ]
 }
 ---
@@ -92,17 +97,18 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D034](D034-practice-configuration-ownership.md) | 11 / Q42 | Who manages the practice? | D001, D011, D023, D030 | confirmed | Practice Owner/Admin account; operational roles retained |
 | [D035](D035-verified-patient-cancellation.md) | 11 / Q43 | Patient cancellation | D013, D029, D032 | confirmed | Verified patient cancels immediately; staff notified |
 | [D036](D036-default-staff-unavailable.md) | 11 / Q44 | Default staff unavailable | D011, D014, D023, D030 | confirmed | Configured backup and shared authorized handoff queue |
-| [D037](D037-keep-original-during-rescheduling.md) | 12 / Q45 | While rescheduling is pending | D009, D013, D032 | unanswered | Pending |
-| [D038](D038-optional-group-release-timing.md) | 12 / Q46 | Groups in the first beta | D002, D005, D021, D022 | unanswered | Pending |
-| [D039](D039-focused-design-followups.md) | 12 / Q47 | Detailed design follow-ups | D000, D002, D030 | unanswered | Pending |
+| [D037](D037-keep-original-during-rescheduling.md) | 12 / Q45 | While rescheduling is pending | D009, D013, D032 | confirmed | Keep original until accepted/approved replacement |
+| [D038](D038-optional-group-release-timing.md) | 12 / Q46 | Groups in the first beta | D002, D005, D021, D022 | confirmed | One-to-one beta baseline; verified optional groups later |
+| [D039](D039-focused-design-followups.md) | 12 / Q47 | Detailed design follow-ups | D000, D002, D030 | confirmed | Focused details explicitly deferred with implementation/use gates |
+| [D040](D040-shared-understanding-confirmation.md) | 13 / final review | Shared understanding confirmation | D037–D039 and scope review | unanswered | Awaiting user confirmation |
 
 ## Current frontier
 
-Round 12: Q45 (D037 original booking during rescheduling), Q46 (D038 optional-group delivery timing), Q47 (D039 explicit focused-detail deferrals). All unanswered. The consolidated scope review is prepared; session-level confirmation has not been requested or received yet.
+Final scope review only: D040 requests explicit confirmation of the consolidated understanding. The capability-level interview is resolved; detailed branches are explicitly deferred to the five new focused follow-ups. No final confirmation is inferred from Q45–Q47.
 
 ## Unresolved or deferred branches
 
-Q45–Q47 are current decisions. The [scope review](scope-review.md) lists every remaining identified detailed branch and its proposed revisit point. Those new deferrals remain proposals until Q47 is answered. Existing geography and technical follow-ups remain open. After the current answers, present the resulting shared understanding for explicit session confirmation before implementing it.
+Accepted deferrals are linked in [the scope review](scope-review.md) and D039. They cover booking policies, identity/permissions/sharing, communication/handoff/delivery, profile/intake details and beta acceptance. Resolve them before affected implementation or real use. Existing geography/technical follow-ups remain open. The current session awaits final shared-understanding confirmation; no stack or application work has started.
 
 ## Shared understanding
 
@@ -122,9 +128,11 @@ Round 10: Medora is a functional practice-management platform enhanced by integr
 
 Round 11 resolves setup: required essentials, optional test and save/resume. A practice Owner/Admin account is explicit, partially amending the initial three-role framing without implying global platform authority or automatic clinical access. Verified patient cancellations execute immediately with staff notification. Backup staff and a shared authorized handoff queue are accepted. See [the consolidated scope review](scope-review.md) for current rather than historical summaries.
 
+Round 12 confirms preservation of the original appointment while a replacement is pending, baseline one-to-one beta handoff before optional verified groups, and explicit durable deferrals for detailed design. The [scope review](scope-review.md) is updated with those choices and the five created follow-ups. Final session confirmation remains pending.
+
 ## Final user confirmation
 
-Pending. The session is active.
+Pending. The consolidated scope and follow-ups are ready for user review; status is awaiting-confirmation. D040 preserves the exact confirmation question. No reply is fabricated or inferred.
 
 ## Related follow-ups and work
 
@@ -141,6 +149,14 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 [Official-source WhatsApp group feasibility](whatsapp-group-feasibility.md).
 
 [Consolidated scope review](scope-review.md).
+
+Focused detail records:
+
+- [Define detailed booking and rescheduling policies](../../follow-ups/20261015T155426Z-define-detailed-booking-policies/follow-up.md)
+- [Define identity, permissions and sharing access rules](../../follow-ups/20261015T155426Z-define-identity-permissions-and-sharing/follow-up.md)
+- [Define handoff, group and notification workflows](../../follow-ups/20261015T155426Z-define-handoff-and-notification-workflows/follow-up.md)
+- [Define profile, intake and correction details](../../follow-ups/20261015T155426Z-define-profile-fields-and-intake-details/follow-up.md)
+- [Define beta validation and public-release criteria](../../follow-ups/20261015T155426Z-define-beta-validation-and-release-gates/follow-up.md)
 
 ## History
 
@@ -167,3 +183,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T15:38:29Z — Saved round 10, clarified the full-platform direction, kept tentative onboarding open, and prepared round 11 operational decisions.
 
 - 2026-10-15T15:44:38Z — Saved round 11; linked Owner/Admin role-set amendment, resolved setup/cancellation/backup choices, and prepared a scope review with three remaining scope decisions.
+
+- 2026-10-15T15:54:26Z — Saved Q45–Q47; created five user-approved focused follow-ups; updated scope review; set awaiting-confirmation and prepared D040.

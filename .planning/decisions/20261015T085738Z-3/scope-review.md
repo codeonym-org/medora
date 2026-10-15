@@ -14,7 +14,7 @@ A practice connects a WhatsApp line and configures the doctors it represents. Th
 
 The agent checks actual Medora availability, obtains minimum booking information and creates an exclusive provisional reservation. Authorized doctors/receptionists review it. Patient-facing status remains pending until approval and successful execution. A configured staffed-hours budget and pre-appointment cutoff bound the hold; expiry releases the slot and triggers notification.
 
-Patients can make basic rescheduling requests through WhatsApp. Replacement times require agreement; the patient can decline and cancel. Verified cancellation executes immediately and notifies staff. Keeping the original appointment during rescheduling is still awaiting Q45.
+Patients can make basic rescheduling requests through WhatsApp. Replacement times require agreement; the patient can decline and cancel. Verified cancellation executes immediately and notifies staff. Keep the original appointment until the replacement is approved and accepted, unless its cancellation or unavailability is explicit.
 
 ## Profiles and conversation
 
@@ -26,7 +26,7 @@ The agent answers approved practical practice information and routes uncertain q
 
 A configured default staff member owns handoffs; a backup and shared authorized queue provide coverage. Agent context may update silently while humans converse; replies wait for invocation/control return. A tag alone is not authority for schedule/record changes.
 
-Staff conversations are private. Selected read-only messages can be shared with named authorized same-practice colleagues, respecting record permissions. Optional patient groups are accepted for eligible consenting participants, with a one-to-one fallback; whether they arrive after baseline beta handoff is pending Q46.
+Staff conversations are private. Selected read-only messages can be shared with named authorized same-practice colleagues, respecting record permissions. One-to-one human handoff is the beta baseline. Optional patient groups can be added for eligible consenting participants after eligibility, invitations and invocation have been verified.
 
 ## Operations and rollout
 
@@ -34,18 +34,18 @@ Medora is the initial authoritative schedule. External calendar synchronization 
 
 Build incrementally while preserving the full feature register. Beta users receive early access before broader advertising. There are no current practitioner validation partners. The beta countries remain explicitly undecided.
 
-## Open decisions for this round
+## Session confirmation
 
-- Q45: preserve the original appointment while a replacement is pending.
-- Q46: baseline one-to-one beta handoff before optional group delivery.
-- Q47: explicitly defer the detailed topics below to durable focused follow-ups rather than silently finalizing them.
+All interview choices are now confirmed or explicitly deferred. The final shared-understanding confirmation is pending in [D040](D040-shared-understanding-confirmation.md). This review is not an implementation or deployment authorization.
 
-## Proposed focused follow-ups — not yet accepted as deferrals
+## Accepted focused follow-ups
 
-- **Booking policy detail:** numerical durations/buffers/notice periods, exact hold/cutoff values, replacement-offer expiry and exceptions. Resolve before implementing the affected booking rules.
-- **Identity and permissions:** verification evidence, caregiver authorization, role combinations, admin/clinical access boundaries and sharing revocation. Resolve before enabling the relevant access/actions.
-- **Communication and handoff:** group invitation/lifecycle, invocation semantics, return-to-agent control, backup reassignment, retry limits and escalation. Resolve before implementing or enabling those flows; integration eligibility stays in the existing technical follow-up.
-- **Profile detail:** minimum fields, approved templates, correction/audit presentation and contradictions. Resolve before collecting actual intake.
-- **Beta acceptance:** observable workflow/reliability gates, synthetic validation, recruitment, feedback and public-release criteria. Resolve before inviting real beta users; country selection has its own existing follow-up.
+The user accepted these deferrals in Q47. Resolve each before its affected feature is implemented or used:
+
+- [Define detailed booking and rescheduling policies](../../follow-ups/20261015T155426Z-define-detailed-booking-policies/follow-up.md): Before implementing the affected scheduling policies or activating them for a practice.
+- [Define identity, permissions and sharing access rules](../../follow-ups/20261015T155426Z-define-identity-permissions-and-sharing/follow-up.md): Before enabling affected record access, membership administration, sharing or booking changes.
+- [Define handoff, group and notification workflows](../../follow-ups/20261015T155426Z-define-handoff-and-notification-workflows/follow-up.md): Before implementing or enabling the corresponding handoff, group or delivery-failure flows.
+- [Define profile, intake and correction details](../../follow-ups/20261015T155426Z-define-profile-fields-and-intake-details/follow-up.md): Before implementing affected profile/intake behavior or collecting real patient intake.
+- [Define beta validation and public-release criteria](../../follow-ups/20261015T155426Z-define-beta-validation-and-release-gates/follow-up.md): Before inviting real beta practices or claiming readiness for broader advertising.
 
 All existing clinical-safety, privacy, provenance and truthful-operation constraints continue to apply. No technical stack has been selected and no application is implemented.
