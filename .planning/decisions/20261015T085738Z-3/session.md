@@ -5,7 +5,7 @@
   "title": "Medora product functionality and initial scope",
   "status": "active",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T14:38:24Z",
+  "updated_at": "2026-10-15T14:45:47Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -77,18 +77,22 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D019](D019-contact-with-multiple-patient-profiles.md) | 7 / Q26 | Returning patients | D007, D016 | confirmed | Reuse verified returning-patient details |
 | [D020](D020-patient-conversation-languages.md) | 7 / Q27 | Patient conversation languages | D006, D003 | confirmed | Reply in user language; remember until changed |
 | [D021](D021-staff-takeover-of-patient-chat.md) | 7 / Q28 | Human takeover | D006, D011, D015 | confirmed | Human takeover confirmed; group mechanism proposed |
-| [D022](D022-optional-patient-group-handoff.md) | 8 / Q29 | Optional groups | D021 | unanswered | Pending |
-| [D023](D023-handoff-staff-assignment.md) | 8 / Q30 | Which staff joins? | D001, D011, D021 | unanswered | Pending |
-| [D024](D024-agent-context-during-human-handoff.md) | 8 / Q31 | Agent awareness during handoff | D007, D021 | unanswered | Pending |
-| [D025](D025-remembered-language-preference-owner.md) | 8 / Q32 | Whose language preference? | D016, D020 | unanswered | Pending |
+| [D022](D022-optional-patient-group-handoff.md) | 8 / Q29 | Optional groups | D021 | confirmed | Optional eligible/consensual groups; one-to-one fallback |
+| [D023](D023-handoff-staff-assignment.md) | 8 / Q30 | Which staff joins? | D001, D011, D021 | confirmed | Default staff member configured in Medora |
+| [D024](D024-agent-context-during-human-handoff.md) | 8 / Q31 | Agent awareness during handoff | D007, D021 | confirmed | Silent authorized context; invoked/returned replies only |
+| [D025](D025-remembered-language-preference-owner.md) | 8 / Q32 | Whose language preference? | D016, D020 | confirmed | Preference belongs to speaking user/contact |
+| [D026](D026-initial-availability-source.md) | 9 / Q33 | Where does availability come from? | D002, D009, D018 | unanswered | Pending |
+| [D027](D027-approved-practice-information.md) | 9 / Q34 | Questions beyond appointments | D006, D023 | unanswered | Pending |
+| [D028](D028-notification-failure-after-confirmation.md) | 9 / Q35 | A confirmation message fails | D009, D013, D015 | unanswered | Pending |
+| [D029](D029-first-contact-existing-record-access.md) | 9 / Q36 | Access to existing patient information | D016, D019 | unanswered | Pending |
 
 ## Current frontier
 
-Round 8: Q29 (D022 optional groups/fallback), Q30 (D023 responsible staff), Q31 (D024 silent context versus directed-message processing), Q32 (D025 owner of remembered language preference). All prepared and unanswered. Research for group feasibility is complete at the product level; native tag detection remains unverified.
+Round 9: Q33 (D026 initial availability source), Q34 (D027 approved practical practice information), Q35 (D028 message-delivery failure after booking confirmation), Q36 (D029 first-contact access to existing patient information). All prepared and unanswered.
 
 ## Unresolved or deferred branches
 
-Group dependence/fallback, responsible handoff staff, agent awareness and preference ownership are current product questions. Group invitation/join/lifecycle details depend on whether the optional group flow is accepted. Exact identity verification, practice-configured intake, patient practical questions, availability rules, failed notifications, beta acceptance, membership/location setup, cancellation details and sharing revocation remain open branches. Country selection and technical integration/provider choices stay in follow-ups.
+Initial availability operations, practical patient questions, notification failures and first-time identity checks are the current questions. Remaining branches include minimum configuration/onboarding, first-increment appointment-change/cancellation scope, intake-template ownership and presentation, default-staff reassignment/unavailability, group lifecycle and invocation mechanics, sharing revocation and beta acceptance criteria. Exact numerical practice policies remain configuration requirements, not invented facts. Country selection, library/model choices and supported WhatsApp onboarding modes remain in follow-ups. Optional group details remain subject to eligibility and integration verification.
 
 ## Shared understanding
 
@@ -99,6 +103,8 @@ Round 5 confirms exclusive pending holds with practice-configured expiry and pat
 Round 6: Medora attaches to a practice-linked external communication line, with WhatsApp the only initial app. A number may be personal or shared; account/API compatibility is not assumed. The line holder is the communication contact and may book for someone else. Minimum booking information permits a provisional hold; optional conversational intake follows without blocking staff confirmation. The user delegated Q21: use a staffed-hours review budget capped by a pre-appointment cutoff, releasing/notifying at the earlier limit. Numerical settings remain open.
 
 Round 7 confirms line-to-doctor/group routing and reuse of verified returning-patient details. The agent replies in the user's own language, remembers it until changed, and is not limited to the four UI locales by that instruction. Human takeover is confirmed. A per-patient group with staff and tag-driven awareness is a proposal, not an accepted universal mechanism; account eligibility, invitation limits and unverified native tagging need to be reflected in the design.
+
+Round 8 confirms optional patient groups for eligible consenting participants, with a one-to-one human handoff fallback. Handoffs target a default staff member configured on Medora, not all staff or necessarily a receptionist. Medora retains authorized context silently during human ownership and replies on invocation/control return; that does not authorize state changes. Remembered language belongs to the speaking account/contact, separately from the represented patient.
 
 ## Final user confirmation
 
@@ -135,3 +141,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T14:24:28Z — Saved round 6 replies, selected the delegated review-clock policy, clarified linked-line/contact concepts, and prepared round 7; integration feasibility is deferred.
 
 - 2026-10-15T14:38:24Z — Saved round 7 replies, researched the proposed group flow against official documentation, and prepared round 8 without treating tentative group behavior as confirmed.
+
+- 2026-10-15T14:45:47Z — Saved round 8 choices, including user-configured default staff, and prepared round 9 core workflow questions.

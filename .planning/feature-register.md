@@ -28,9 +28,9 @@ Keep the full vision discoverable while delivering incrementally. This register 
 | Booking for someone else | Communication contact may differ from patient, confirmed | Multiple-profile handling and authorization details |
 | Optional conversational intake | After minimum-data reservation; nonessential answers may be skipped | Exact fields and practice templates |
 | Returning-patient convenience | Reuse verified contact-patient details, confirmed | Matching, re-verification and correction details |
-| Agent language preference | Reply in user language and remember until changed, confirmed | Preference owner and uncertain/unsupported language handling |
-| Human takeover | Confirmed capability | Assigned staff, control transfer, optional group proposal, context behavior |
-| Per-patient WhatsApp groups | User proposal; not yet confirmed | Eligibility, invitations, staff audience, tags and lifecycle |
+| Agent language preference | Reply in user language and remember until changed, confirmed | Speaking-account/contact owner confirmed; uncertain/unsupported language handling open |
+| Human takeover | Confirmed capability | Configured default staff and silent context confirmed; transfer/failure details open |
+| Per-patient WhatsApp groups | Optional for eligible consenting participants; one-to-one fallback confirmed | Configured default staff; invitations, tags and lifecycle details open |
 | AI-generated additional translations | User-requested extension capability | Generation, review, publication, fallback behavior |
 
 Safety, privacy, provenance, authorization, and truthful operation reporting remain cross-cutting requirements, as documented in AGENTS.md. No feature is implemented by virtue of appearing here. Update this register as decisions become explicit; preserve the record of changed or rejected scope.

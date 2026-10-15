@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D025",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Whose language preference?",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 8,
   "created_at": "2026-10-15T14:38:24Z",
-  "updated_at": "2026-10-15T14:38:24Z",
+  "updated_at": "2026-10-15T14:45:47Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -30,7 +30,8 @@
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D016-booking-for-someone-else.md",
     ".planning/decisions/20261015T085738Z-3/D020-patient-conversation-languages.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:45:47Z"
 }
 ---
 
@@ -50,27 +51,29 @@ Q32 — Whose language preference?: Should the remembered chat language belong t
 
 Yes. Keep staff-account and communication-contact preferences separate from the patient being booked, and honor explicit language-change requests.
 
-This remains an assistant recommendation, not an accepted choice.
+The current decision records the user reply below. Earlier recommendations are not automatically accepted where the user supplied a different configuration.
 
 ## User reply — original words
 
-Pending. Prepared for round 8.
+Round 8 reply, recorded 2026-10-15T14:45:47Z; original message timestamp unavailable:
+
+> q32: yeah
 
 ## Interpretation
 
-Pending.
+The user accepts remembering language for the person/contact speaking, separately from a represented patient. Staff-account preferences and external communication-contact preferences are distinct; explicit changes are honored.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: remembered chat language belongs to the speaking user/contact, not automatically to the patient they are booking for. A parent's language does not overwrite a child's patient-profile language.
 
 ## Consequences and affected components
 
-Language preferences, Communication contacts, Patient profiles. The answer will shape the related product workflow.
+Confirmed: remembered chat language belongs to the speaking user/contact, not automatically to the patient they are booking for. A parent's language does not overwrite a child's patient-profile language. Handling a phone/line shared by multiple speakers, mixed-language messages and identity changes remains open; the accepted distinction does not solve identifying each physical speaker.
 
 ## Assumptions, evidence, and open questions
 
-No group support for every line, automatic participant addition, all-staff access, native tagging support, record-update authorization, or preference ownership is inferred. Technical stack selection remains outside the session.
+Handling a phone/line shared by multiple speakers, mixed-language messages and identity changes remains open; the accepted distinction does not solve identifying each physical speaker.
 
 ## Extra notes and follow-ups
 
@@ -79,3 +82,5 @@ The linked-line follow-up holds remaining WhatsApp integration verification. The
 ## History
 
 - 2026-10-15T14:38:24Z — Prepared the round 8 question after preserving the round 7 reply and checking relevant official documentation.
+
+- 2026-10-15T14:45:47Z — Saved round 8 reply and confirmed its explicit scope. Prior interpretation: Pending. Prior decision: Pending.

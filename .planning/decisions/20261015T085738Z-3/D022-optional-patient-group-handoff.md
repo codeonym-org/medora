@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D022",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Optional groups",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 8,
   "created_at": "2026-10-15T14:38:24Z",
-  "updated_at": "2026-10-15T14:38:24Z",
+  "updated_at": "2026-10-15T14:45:47Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -29,7 +29,8 @@
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D021-staff-takeover-of-patient-chat.md",
     ".planning/decisions/20261015T085738Z-3/whatsapp-group-feasibility.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:45:47Z"
 }
 ---
 
@@ -49,27 +50,29 @@ Q29 — Optional groups: Given WhatsApp's restrictions, should per-patient group
 
 Yes. Keep the patient-group idea, but preserve a usable human handoff for every supported practice without requiring group access.
 
-This remains an assistant recommendation, not an accepted choice.
+The current decision records the user reply below. Earlier recommendations are not automatically accepted where the user supplied a different configuration.
 
 ## User reply — original words
 
-Pending. Prepared for round 8.
+Round 8 reply, recorded 2026-10-15T14:45:47Z; original message timestamp unavailable:
+
+> q29: ok
 
 ## Interpretation
 
-Pending.
+The user accepts optional per-patient groups for eligible practices and consenting participants, with authorized human handling of the existing one-to-one patient conversation when groups are unavailable or declined.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: optional patient-specific groups with a one-to-one handoff fallback. Group availability is eligibility-dependent; the patient is not required to join a group to receive human assistance.
 
 ## Consequences and affected components
 
-Human handoff, Optional patient groups, Patient channel continuity. The answer will shape the related product workflow.
+Confirmed: optional patient-specific groups with a one-to-one handoff fallback. Group availability is eligibility-dependent; the patient is not required to join a group to receive human assistance. Group delivery timing, lifecycle, invitation/join failures and native tag detection remain unresolved. No group implementation or supported-account compatibility is claimed.
 
 ## Assumptions, evidence, and open questions
 
-No group support for every line, automatic participant addition, all-staff access, native tagging support, record-update authorization, or preference ownership is inferred. Technical stack selection remains outside the session.
+Group delivery timing, lifecycle, invitation/join failures and native tag detection remain unresolved. No group implementation or supported-account compatibility is claimed.
 
 ## Extra notes and follow-ups
 
@@ -78,3 +81,5 @@ The linked-line follow-up holds remaining WhatsApp integration verification. The
 ## History
 
 - 2026-10-15T14:38:24Z — Prepared the round 8 question after preserving the round 7 reply and checking relevant official documentation.
+
+- 2026-10-15T14:45:47Z — Saved round 8 reply and confirmed its explicit scope. Prior interpretation: Pending. Prior decision: Pending.

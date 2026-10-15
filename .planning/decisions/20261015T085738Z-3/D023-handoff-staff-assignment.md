@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D023",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Which staff joins?",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 8,
   "created_at": "2026-10-15T14:38:24Z",
-  "updated_at": "2026-10-15T14:38:24Z",
+  "updated_at": "2026-10-15T14:45:47Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -32,7 +32,8 @@
     ".planning/decisions/20261015T085738Z-3/D001-first-practice.md",
     ".planning/decisions/20261015T085738Z-3/D011-staff-approval-permissions.md",
     ".planning/decisions/20261015T085738Z-3/D021-staff-takeover-of-patient-chat.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:45:47Z"
 }
 ---
 
@@ -52,27 +53,29 @@ Q30 — Which staff joins?: Should a handoff go to an assigned receptionist firs
 
 Use named responsible staff, with an authorized backup if unavailable. For optional groups, invite only the people needed for that patient/request.
 
-This remains an assistant recommendation, not an accepted choice.
+The current decision records the user reply below. Earlier recommendations are not automatically accepted where the user supplied a different configuration.
 
 ## User reply — original words
 
-Pending. Prepared for round 8.
+Round 8 reply, recorded 2026-10-15T14:45:47Z; original message timestamp unavailable:
+
+> q30: a default staff (configured on modera platform)
 
 ## Interpretation
 
-Pending.
+The user selects a default staff member configured in Medora as the handoff recipient. They do not require that person to be a receptionist, add all staff by default, or settle automatic backup/escalation behavior.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: route handoffs to the default staff member configured on Medora, subject to the existing permissions and practice scope.
 
 ## Consequences and affected components
 
-Handoff assignment, Staff visibility, Practice workflow. The answer will shape the related product workflow.
+Confirmed: route handoffs to the default staff member configured on Medora, subject to the existing permissions and practice scope. Configuration scope (practice versus line/doctor), who may change the setting, unavailability handling and reassignment remain open. Do not invent a mandatory receptionist-first role or all-staff group.
 
 ## Assumptions, evidence, and open questions
 
-No group support for every line, automatic participant addition, all-staff access, native tagging support, record-update authorization, or preference ownership is inferred. Technical stack selection remains outside the session.
+Configuration scope (practice versus line/doctor), who may change the setting, unavailability handling and reassignment remain open. Do not invent a mandatory receptionist-first role or all-staff group.
 
 ## Extra notes and follow-ups
 
@@ -81,3 +84,5 @@ The linked-line follow-up holds remaining WhatsApp integration verification. The
 ## History
 
 - 2026-10-15T14:38:24Z — Prepared the round 8 question after preserving the round 7 reply and checking relevant official documentation.
+
+- 2026-10-15T14:45:47Z — Saved round 8 reply and confirmed its explicit scope. Prior interpretation: Pending. Prior decision: Pending.
