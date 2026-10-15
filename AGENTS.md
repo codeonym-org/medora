@@ -4,6 +4,14 @@ Medora is an AI medical secretary for doctors and clinics. It coordinates appoin
 
 Before planning or implementing product behavior, read [docs/product-vision.md](docs/product-vision.md) for workflows, scope, and acceptance requirements.
 
+## Planning memory
+
+- For every grilling session, create or resume `.planning/decisions/<DATETIME-ISSUE-ID>/` and maintain its session index and individual decision records. Before interviewing, read [.planning/README.md](.planning/README.md) and relevant predecessor decisions. Follow its schemas and lifecycle rules.
+- Record each question, its context and dependencies, the user's actual reply, and your separate interpretation. Save answers before asking the next round; preserve revisions and distinguish confirmed decisions from recommendations and unresolved assumptions.
+- Capture unrelated discoveries and deferred work immediately in `.planning/follow-ups/<DATETIME-title>/`, using the follow-up schema. Link them from the originating session, issue, or PR; a PR comment alone is insufficient. Logging a follow-up does not authorize implementing it.
+- Before resuming planning or beginning related work, consult the planning index and relevant open follow-ups. Keep records in version control, update their outcomes, and obtain explicit confirmation of shared understanding before implementing a grilled design.
+- These instructions apply to all future Medora sessions. Honor each session's declared scope and exclusions.
+
 ## Working in this repository
 
 - Inspect the current files, dependencies, configuration, and applicable instructions before substantial changes. Use the repository as the source of truth for implementation details.
