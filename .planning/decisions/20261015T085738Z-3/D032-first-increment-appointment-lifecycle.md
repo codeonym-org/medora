@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D032",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Changes and cancellations in beta",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 10,
   "created_at": "2026-10-15T14:52:33Z",
-  "updated_at": "2026-10-15T14:52:33Z",
+  "updated_at": "2026-10-15T15:38:29Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -36,7 +36,8 @@
     ".planning/decisions/20261015T085738Z-3/D013-replacement-slot-agreement.md",
     ".planning/decisions/20261015T085738Z-3/D029-first-contact-existing-record-access.md",
     "docs/product-vision.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T15:38:29Z"
 }
 ---
 
@@ -56,27 +57,29 @@ Q39 — Changes and cancellations in beta: Should the first beta let patients re
 
 Include basic cancellation and rescheduling requests in the initial booking workflow. Keep the accepted identity, staff-review and patient-agreement rules; defer advanced schedule optimization and waiting lists.
 
-The user has not yet accepted this recommendation.
+The current decision below distinguishes the accepted reply from tentative/unresolved details; earlier recommendation wording is historical.
 
 ## User reply — original words
 
-Pending. Prepared for round 10.
+Round 10 reply, recorded 2026-10-15T15:38:29Z; original message timestamp unavailable:
+
+> q39: ok
 
 ## Interpretation
 
-Pending.
+The user accepts basic cancellation and rescheduling requests through the same WhatsApp conversation in the initial beta, preserving the accepted verification, staff-review and replacement-agreement rules. Advanced optimization and waiting-list behavior remain later work.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: initial beta includes basic booking, cancellation/rescheduling requests and profiling. Exact cancellation execution/approval and ordinary practice-policy handling still require clarification.
 
 ## Consequences and affected components
 
-WhatsApp appointment management, Cancellation, Rescheduling, Beta scope. The answer will constrain the first usable staff/practice workflow.
+Confirmed: initial beta includes basic booking, cancellation/rescheduling requests and profiling. Exact cancellation execution/approval and ordinary practice-policy handling still require clarification. Whether a verified cancellation is immediate or staff-approved, how an existing appointment is kept during a rescheduling request, and policy exception handling remain open. No fee, notice period, wait-list automation or auto-rescheduling is inferred.
 
 ## Assumptions, evidence, and open questions
 
-Detailed layout, configuration values, ordinary cancellation policy and exact intake content remain open. No application stack or integration is selected.
+Whether a verified cancellation is immediate or staff-approved, how an existing appointment is kept during a rescheduling request, and policy exception handling remain open. No fee, notice period, wait-list automation or auto-rescheduling is inferred.
 
 ## Extra notes and follow-ups
 
@@ -85,3 +88,5 @@ The complete vision stays registered. No unrelated follow-up introduced by this 
 ## History
 
 - 2026-10-15T14:52:33Z — Prepared the round 10 question from accepted prerequisites.
+
+- 2026-10-15T15:38:29Z — Saved round 10 reply; status confirmed. Prior interpretation: Pending. Prior decision: Pending.

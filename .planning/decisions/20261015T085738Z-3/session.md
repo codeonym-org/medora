@@ -5,7 +5,7 @@
   "title": "Medora product functionality and initial scope",
   "status": "active",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T14:52:33Z",
+  "updated_at": "2026-10-15T15:38:29Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -85,18 +85,21 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D027](D027-approved-practice-information.md) | 9 / Q34 | Questions beyond appointments | D006, D023 | confirmed | Approved practical answers; reduce patient embarrassment |
 | [D028](D028-notification-failure-after-confirmation.md) | 9 / Q35 | A confirmation message fails | D009, D013, D015 | confirmed | Keep booking confirmed; delivery failures visible/retried |
 | [D029](D029-first-contact-existing-record-access.md) | 9 / Q36 | Access to existing patient information | D016, D019 | confirmed | Staff verifies uncertain access to existing records |
-| [D030](D030-staff-daily-workspace.md) | 10 / Q37 | The staff workspace | D007, D009, D026 | unanswered | Pending |
-| [D031](D031-practice-setup-before-activation.md) | 10 / Q38 | Practice setup | D015, D023, D026 | unanswered | Pending |
-| [D032](D032-first-increment-appointment-lifecycle.md) | 10 / Q39 | Changes and cancellations in beta | D002, D006, D013, D029 | unanswered | Pending |
-| [D033](D033-intake-template-and-profile-review.md) | 10 / Q40 | Who controls intake? | D007, D017, D027 | unanswered | Pending |
+| [D030](D030-staff-daily-workspace.md) | 10 / Q37 | The staff workspace | D007, D009, D026 | confirmed | Functional management platform enhanced with AI agents |
+| [D031](D031-practice-setup-before-activation.md) | 10 / Q38 | Practice setup | D015, D023, D026 | needs-clarification | Tentative; mandatory test-booking gate not confirmed |
+| [D032](D032-first-increment-appointment-lifecycle.md) | 10 / Q39 | Changes and cancellations in beta | D002, D006, D013, D029 | confirmed | Basic cancellations/rescheduling in initial beta |
+| [D033](D033-intake-template-and-profile-review.md) | 10 / Q40 | Who controls intake? | D007, D017, D027 | confirmed | Doctor-approved intake, source labels and corrections |
+| [D034](D034-practice-configuration-ownership.md) | 11 / Q42 | Who manages the practice? | D001, D011, D023, D030 | unanswered | Pending |
+| [D035](D035-verified-patient-cancellation.md) | 11 / Q43 | Patient cancellation | D013, D029, D032 | unanswered | Pending |
+| [D036](D036-default-staff-unavailable.md) | 11 / Q44 | Default staff unavailable | D011, D014, D023, D030 | unanswered | Pending |
 
 ## Current frontier
 
-Round 10: Q37 (D030 direct staff workspace views), Q38 (D031 setup before activation), Q39 (D032 initial cancellation/rescheduling scope), Q40 (D033 doctor-owned intake and profile correction). All prepared and unanswered.
+Round 11: Q41 (D031 clarification: essential configuration with optional test), Q42 (D034 configuration ownership), Q43 (D035 verified cancellation execution), Q44 (D036 backup staff/shared queue). All prepared and unanswered.
 
 ## Unresolved or deferred branches
 
-The current questions define the initial staff workspace, onboarding readiness, basic appointment lifecycle and intake ownership. Remaining detailed branches include beta acceptance, role/configuration ownership, default-staff unavailability, exact verification evidence, group lifecycle/invocation, sharing revocation, retry/failed-delivery escalation and ordinary cancellation rules. Country and technical integration/library choices remain in follow-ups. No policy value or delivery date is invented.
+The current questions close essential onboarding, configuration authority, cancellation execution and routine handoff coverage. Remaining details include beta acceptance, exact verification evidence, group lifecycle/invocation, sharing revocation, retry escalation, replacement-offer timing and rescheduling preservation. These must be explicitly resolved or deferred in the shared-understanding review; no implementation is authorized by unfinished discovery. Numerical policies remain configurable. Country and technical choices remain in follow-ups.
 
 ## Shared understanding
 
@@ -111,6 +114,8 @@ Round 7 confirms line-to-doctor/group routing and reuse of verified returning-pa
 Round 8 confirms optional patient groups for eligible consenting participants, with a one-to-one human handoff fallback. Handoffs target a default staff member configured on Medora, not all staff or necessarily a receptionist. Medora retains authorized context silently during human ownership and replies on invocation/control return; that does not authorize state changes. Remembered language belongs to the speaking account/contact, separately from the represented patient.
 
 Round 9: Medora holds the initial authoritative schedule; external calendar sync can come later. The agent answers approved practical practice questions, with the user identifying reduced embarrassment as a benefit. Confirmed appointment status survives a notification failure; staff see the failure and retries follow policy. Staff verify uncertain/new contact-patient relationships before existing-record access or booking changes; new requests can enter review without disclosure.
+
+Round 10: Medora is a functional practice-management platform enhanced by integrated AI agents. Staff have direct calendars, request queues and profile views alongside assistant chat; this does not change the conversational WhatsApp patient journey or authorize all roadmap features at once. Basic cancellation/rescheduling requests are included in initial beta. Doctors approve intake questions and authorized staff can correct source-labelled information. Practice setup was accepted tentatively; a mandatory test-booking activation gate remains unconfirmed.
 
 ## Final user confirmation
 
@@ -151,3 +156,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T14:45:47Z — Saved round 8 choices, including user-configured default staff, and prepared round 9 core workflow questions.
 
 - 2026-10-15T14:52:33Z — Saved round 9 choices and the product owner's embarrassment rationale; prepared round 10 for initial staff/practice workflows.
+
+- 2026-10-15T15:38:29Z — Saved round 10, clarified the full-platform direction, kept tentative onboarding open, and prepared round 11 operational decisions.

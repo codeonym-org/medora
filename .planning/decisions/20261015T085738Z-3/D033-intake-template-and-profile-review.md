@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D033",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Who controls intake?",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 10,
   "created_at": "2026-10-15T14:52:33Z",
-  "updated_at": "2026-10-15T14:52:33Z",
+  "updated_at": "2026-10-15T15:38:29Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -34,7 +34,8 @@
     ".planning/decisions/20261015T085738Z-3/D017-optional-conversational-intake.md",
     ".planning/decisions/20261015T085738Z-3/D027-approved-practice-information.md",
     "docs/product-vision.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T15:38:29Z"
 }
 ---
 
@@ -54,27 +55,29 @@ Q40 — Who controls intake?: Should doctors choose or approve the short intake 
 
 Yes. Use doctor-approved questions; keep patient statements, staff corrections and AI summaries distinguishable. Show unanswered questions and contradictions rather than filling gaps.
 
-The user has not yet accepted this recommendation.
+The current decision below distinguishes the accepted reply from tentative/unresolved details; earlier recommendation wording is historical.
 
 ## User reply — original words
 
-Pending. Prepared for round 10.
+Round 10 reply, recorded 2026-10-15T15:38:29Z; original message timestamp unavailable:
+
+> q40: ok
 
 ## Interpretation
 
-Pending.
+The user accepts doctors choosing/approving short intake questions by appointment type, organizing replies into source-labelled profiles, and authorized staff corrections while preserving provenance.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: doctor-owned/approved intake templates, source-labelled patient information, authorized correction, and explicit missing/contradictory information. Staff corrections and AI summaries remain distinguishable from the original patient statements.
 
 ## Consequences and affected components
 
-Intake templates, Profile preparation, Information provenance, Staff correction. The answer will constrain the first usable staff/practice workflow.
+Confirmed: doctor-owned/approved intake templates, source-labelled patient information, authorized correction, and explicit missing/contradictory information. Staff corrections and AI summaries remain distinguishable from the original patient statements. Exact template fields, versioning, correction permissions, review presentation and initial questionnaire limits remain implementation/product details. No clinician-authored diagnosis or prescription feature is added.
 
 ## Assumptions, evidence, and open questions
 
-Detailed layout, configuration values, ordinary cancellation policy and exact intake content remain open. No application stack or integration is selected.
+Exact template fields, versioning, correction permissions, review presentation and initial questionnaire limits remain implementation/product details. No clinician-authored diagnosis or prescription feature is added.
 
 ## Extra notes and follow-ups
 
@@ -83,3 +86,5 @@ The complete vision stays registered. No unrelated follow-up introduced by this 
 ## History
 
 - 2026-10-15T14:52:33Z — Prepared the round 10 question from accepted prerequisites.
+
+- 2026-10-15T15:38:29Z — Saved round 10 reply; status confirmed. Prior interpretation: Pending. Prior decision: Pending.

@@ -1,10 +1,10 @@
 # Medora — Agent Guidance
 
-Medora is an AI medical secretary for doctors and clinics. It coordinates appointments, collects preliminary patient information, and prepares consultation briefings. The doctor retains control over clinical decisions and practice policies.
+Medora is a practice-management platform for doctors and clinics, enhanced with integrated AI medical-secretary agents. It coordinates appointments, collects preliminary patient information, and prepares consultation briefings. The doctor retains control over clinical decisions and practice policies.
 
 Before planning or implementing product behavior, read [docs/product-vision.md](docs/product-vision.md) for workflows, scope, and acceptance requirements.
 
-The core patient experience is natural conversation with the WhatsApp agent, including booking and appointment inquiries. Medora attaches to a practice-linked external communication line (WhatsApp only initially); keep the communication contact distinct from the patient being booked. Staff use private management conversations. Patient requests create provisional reservations pending staff review; communicate confirmation only after approval and successful backend execution. See the planning session for unresolved workflow details.
+The core patient experience is natural conversation with the WhatsApp agent, including booking and appointment inquiries. Medora attaches to a practice-linked external communication line (WhatsApp only initially); keep the communication contact distinct from the patient being booked. Staff have functional calendar, request-review and patient-profile interfaces alongside private assistant conversations. Patient requests create provisional reservations pending staff review; communicate confirmation only after approval and successful backend execution. See the planning session for unresolved workflow details.
 
 ## Planning memory
 

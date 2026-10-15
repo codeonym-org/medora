@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D030",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "The staff workspace",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 10,
   "created_at": "2026-10-15T14:52:33Z",
-  "updated_at": "2026-10-15T14:52:33Z",
+  "updated_at": "2026-10-15T15:38:29Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -34,7 +34,8 @@
     ".planning/decisions/20261015T085738Z-3/D009-routine-booking-authority.md",
     ".planning/decisions/20261015T085738Z-3/D026-initial-availability-source.md",
     "docs/product-vision.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T15:38:29Z"
 }
 ---
 
@@ -54,27 +55,29 @@ Q37 — The staff workspace: Alongside private chat, should doctors and receptio
 
 Yes. Keep chat central, with direct views of the schedule, review queue and profiles. Permissions determine what each staff user can see and change.
 
-The user has not yet accepted this recommendation.
+The current decision below distinguishes the accepted reply from tentative/unresolved details; earlier recommendation wording is historical.
 
 ## User reply — original words
 
-Pending. Prepared for round 10.
+Round 10 reply, recorded 2026-10-15T15:38:29Z; original message timestamp unavailable:
+
+> q37: yes, its a fully functional platform, enhanced with integrated AI agents
 
 ## Interpretation
 
-Pending.
+The user explicitly confirms that Medora is a functional practice-management platform enhanced with integrated AI agents. Staff must have direct operational interfaces for calendars, review queues and patient profiles as well as private assistant conversations. The earlier recommendation to keep chat central does not justify reducing the platform to a chatbot. The patient booking journey remains WhatsApp conversational.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: a functional staff-facing platform plus integrated agents, including direct schedule, request-review and profile access according to permissions. Incremental delivery still applies; this is not authorization to implement the entire long-term roadmap at once.
 
 ## Consequences and affected components
 
-Staff interface, Calendar, Request review, Patient profiles. The answer will constrain the first usable staff/practice workflow.
+Confirmed: a functional staff-facing platform plus integrated agents, including direct schedule, request-review and profile access according to permissions. Incremental delivery still applies; this is not authorization to implement the entire long-term roadmap at once. Detailed interaction design, navigation and which staff actions need additional confirmation remain to be designed. No separate patient booking UI is introduced by this clarification.
 
 ## Assumptions, evidence, and open questions
 
-Detailed layout, configuration values, ordinary cancellation policy and exact intake content remain open. No application stack or integration is selected.
+Detailed interaction design, navigation and which staff actions need additional confirmation remain to be designed. No separate patient booking UI is introduced by this clarification.
 
 ## Extra notes and follow-ups
 
@@ -83,3 +86,5 @@ The complete vision stays registered. No unrelated follow-up introduced by this 
 ## History
 
 - 2026-10-15T14:52:33Z — Prepared the round 10 question from accepted prerequisites.
+
+- 2026-10-15T15:38:29Z — Saved round 10 reply; status confirmed. Prior interpretation: Pending. Prior decision: Pending.

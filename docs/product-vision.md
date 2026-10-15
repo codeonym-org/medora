@@ -2,7 +2,7 @@
 
 **Your practice, thoughtfully organized.**
 
-Medora is an AI-powered medical secretary that helps doctors manage daily practice, coordinate appointments, highlight requests needing attention, and prepare structured patient context before consultations. Its purpose is to reduce administrative work and help doctors spend more time caring for patients.
+Medora is a functional practice-management platform enhanced by integrated AI medical-secretary agents. It helps doctors manage daily practice, coordinate appointments, highlight requests needing attention, and prepare structured patient context before consultations. Its purpose is to reduce administrative work and help doctors spend more time caring for patients.
 
 The brand is professional, intelligent, calm, proactive, discreet, and human. The intended market is international, with multilingual product support. Medora should feel like a reliable medical office assistant. Product behavior follows the safety, privacy, and execution boundaries in [AGENTS.md](../AGENTS.md).
 
@@ -15,8 +15,10 @@ These confirmed choices refine the original roadmap. The [active product session
 - **Language:** Reply in the speaker's language and remember the speaker/contact preference until changed. This is distinct from patient-profile language and the initial UI locales.
 - **Booking approval:** Reserve provisionally and exclusively, then obtain authorized doctor/receptionist review. Notify the patient of actual confirmation, rejection, or scheduling changes; never call a reservation confirmed.
 - **Reservation expiry:** Count the configured review budget during staffed hours and cap it at a pre-appointment cutoff. Expire at the earlier limit, release the slot, and notify the patient. Exact durations remain practice configuration.
+- **Initial appointment lifecycle:** Basic cancellation and rescheduling requests belong in the first beta alongside booking and profiling; ordinary cancellation execution policy is still being clarified.
 - **Replacement times:** Obtain patient agreement to a different time. The patient may decline and cancel when the replacement does not fit their schedule.
-- **Profiles and intake:** Begin with administrative identity/contact details, appointment history, patient-reported visit reasons, and short appointment-specific intake. Gather minimum booking data first; optional intake follows without blocking confirmation merely because nonessential answers are missing.
+- **Profiles and intake:** Begin with administrative identity/contact details, appointment history, patient-reported visit reasons, and short appointment-specific intake. Doctors choose/approve intake questions and authorized staff may correct information with provenance preserved. Gather minimum booking data first; optional intake follows without blocking confirmation merely because nonessential answers are missing.
+- **Staff platform:** Direct calendar, review-queue and patient-profile interfaces operate alongside private assistant chat. AI enhances the platform; the initial product is not limited to a conversation screen.
 - **Staff conversation:** Private management conversations may share selected read-only messages with named authorized same-practice colleagues, respecting patient-record permissions.
 - **Human handoff:** Route to a default staff member configured in Medora. Patient groups are optional for eligible consenting participants, with one-to-one fallback. During human handling, retain authorized context silently and reply on invocation/control return; invocation alone does not authorize record changes. Native tag behavior and group lifecycle remain unresolved.
 - **Schedule and practice information:** Staff maintain real availability in Medora initially; external calendar sync comes later. Answer approved practical information such as hours, address, fees and preparation, escalating missing information to staff.

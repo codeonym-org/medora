@@ -10,11 +10,12 @@ Keep the full vision discoverable while delivering incrementally. This register 
 | English, French, Arabic, Spanish UI | Initial language list confirmed | Locale variants, language switching, translation review |
 | Beta-user early access | Confirmed rollout stage | Recruitment, beta scope, success measures, exit criteria |
 | Availability and calendar management | Medora is initial scheduling source, confirmed | Minimum setup, controls and calendar views |
-| Rescheduling and cancellation | In product vision; release assignment open | Patient agreement to replacement and ability to cancel confirmed; ordinary cancellation details open |
+| Rescheduling and cancellation | Basic cancellation/rescheduling requests in initial beta, confirmed | Patient replacement agreement confirmed; cancellation execution policy open |
 | Booking confirmations | Staff approval required after provisional reservation | Authorized staff review and staffed-hours/cutoff policy chosen; numerical settings open; confirmed booking survives visible/retried delivery failure |
 | Reminders and notification preferences | Preserved planned capability; sequencing open | Timing, channels, opt-in behavior |
-| Short patient intake and structured summaries | In product vision; profiling boundary being clarified | Required/optional fields, attribution, summary depth |
+| Short patient intake and structured summaries | Doctor-approved intake, source-labelled profiles and staff corrections confirmed | Exact templates, correction rights, summary depth |
 | Pre-consultation briefing and daily overview | Preserved planned capability; sequencing open | First-release breadth, presentation, update timing |
+| Functional staff platform | Direct calendar, review-queue and patient-profile views confirmed; AI enhances platform | Detailed navigation and interaction design |
 | Doctor/staff conversational assistant | Private staff conversations and optional sharing confirmed | Selected read-only messages to authorized same-practice colleagues confirmed; revocation/details open |
 | Patient conversational appointment requests | WhatsApp agent handles booking and appointment inquiries in chat | Additional channels, conversation languages, human handoff |
 | Request priority and human review queues | Preserved planned capability; sequencing open | Configured protocols, reviewer availability, escalation |
