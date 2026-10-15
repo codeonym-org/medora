@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D015",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Which practice are they messaging?",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 6,
   "created_at": "2026-10-15T13:52:30Z",
-  "updated_at": "2026-10-15T13:52:30Z",
+  "updated_at": "2026-10-15T14:24:28Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -26,11 +26,14 @@
     "Practice identity",
     "Doctor selection"
   ],
-  "follow_ups": [],
+  "follow_ups": [
+    ".planning/follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md"
+  ],
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D001-first-practice.md",
     ".planning/decisions/20261015T085738Z-3/D006-booking-entry.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:24:28Z"
 }
 ---
 
@@ -50,32 +53,36 @@ Q22 — Which practice are they messaging?: Should patients message the practice
 
 Start with the practice's own contact and identity. Within a multi-doctor practice, ask which doctor they want if that is not already clear.
 
-This is a recommendation, not an accepted choice. Alternatives remain open until the user replies.
+The current decision below records the reply. For Q21 the user delegated the choice; the rationale is attributed to the assistant. Earlier framing is retained as history.
 
 ## User reply — original words
 
-Pending. Prepared for round 6.
+Round 6 reply, recorded 2026-10-15T14:24:28Z; original message timestamp unavailable:
+
+> q22: medora is a platform, it requires its users (practice) to link a client facing communication app (currently only whatsapp will be used) so, the whatsapp app will need a linked line (like whatsapp busniess etc ...) so it can be either one of their personal phone numbers, or a shared one, the idea is that modera attaches to a line for edge communication
 
 ## Interpretation
 
-Pending.
+Medora is the practice management platform. A practice links a client-facing communication app/line, currently WhatsApp only. The linked phone number may be personal to a practitioner or shared. Medora attaches to that line for external patient conversation; this is not a requirement for a single platform-wide Medora contact. Number ownership does not itself establish doctor routing or platform permissions.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: a linked communication-line model for patient communication, with WhatsApp as the only initial app and support for personally used or shared phone numbers as a product requirement. Staff use Medora privately; patients communicate over the linked external line.
 
 ## Consequences and affected components
 
-Affected areas: Patient entry, Practice identity, Doctor selection. Product detail depends on the user's choice.
+Confirmed: a linked communication-line model for patient communication, with WhatsApp as the only initial app and support for personally used or shared phone numbers as a product requirement. Staff use Medora privately; patients communicate over the linked external line. How a line maps to practice/doctors, whether a practice may attach multiple lines, and coexistence with manual replies remain open product details. No particular WhatsApp account type, API, migration path, or personal-account integration compatibility is claimed; technical feasibility is a separate follow-up.
 
 ## Assumptions, evidence, and open questions
 
-No review duration, routing convention, caregiver permission, or required intake field is silently selected. Technical stack choices remain excluded.
+How a line maps to practice/doctors, whether a practice may attach multiple lines, and coexistence with manual replies remain open product details. No particular WhatsApp account type, API, migration path, or personal-account integration compatibility is claimed; technical feasibility is a separate follow-up.
 
 ## Extra notes and follow-ups
 
-No unrelated follow-up introduced by this question.
+[Linked-line onboarding research](../../follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md) preserves the later technical feasibility work.
 
 ## History
 
 - 2026-10-15T13:52:30Z — Assistant prepared the round 6 question from confirmed prerequisites.
+
+- 2026-10-15T14:24:28Z — Saved round 6 reply and current decision. Prior interpretation: Pending. Prior decision: Pending.

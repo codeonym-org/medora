@@ -5,7 +5,7 @@
   "title": "Medora product functionality and initial scope",
   "status": "active",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T13:52:30Z",
+  "updated_at": "2026-10-15T14:24:28Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -25,7 +25,8 @@
   "related_follow_ups": [
     ".planning/follow-ups/20261015T102802Z-select-internationalization-and-localization-libraries/follow-up.md",
     ".planning/follow-ups/20261015T110819Z-ai-generated-additional-ui-translations/follow-up.md",
-    ".planning/follow-ups/20261015T121349Z-choose-beta-operating-countries/follow-up.md"
+    ".planning/follow-ups/20261015T121349Z-choose-beta-operating-countries/follow-up.md",
+    ".planning/follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md"
   ]
 }
 ---
@@ -68,24 +69,30 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D011](D011-staff-approval-permissions.md) | 5 / Q18 | Approval roles | D001, D009 | confirmed | Doctor and authorized receptionist approval |
 | [D012](D012-conversation-sharing-scope.md) | 5 / Q19 | Sharing scope | D001, D008 | confirmed | Selected read-only messages to authorized same-practice colleagues |
 | [D013](D013-replacement-slot-agreement.md) | 5 / Q20 | Replacement-time agreement | D009 | confirmed | Patient accepts replacement or may cancel |
-| [D014](D014-review-deadline-outside-working-hours.md) | 6 / Q21 | Requests outside opening hours | D010 | unanswered | Pending |
-| [D015](D015-practice-and-doctor-routing.md) | 6 / Q22 | Which practice are they messaging? | D001, D006 | unanswered | Pending |
-| [D016](D016-booking-for-someone-else.md) | 6 / Q23 | Booking for someone else | D006, D007 | unanswered | Pending |
-| [D017](D017-optional-conversational-intake.md) | 6 / Q24 | Intake without blocking booking | D007, D009 | unanswered | Pending |
+| [D014](D014-review-deadline-outside-working-hours.md) | 6 / Q21 | Requests outside opening hours | D010 | confirmed | Delegated choice: staffed-hours budget capped before appointment |
+| [D015](D015-practice-and-doctor-routing.md) | 6 / Q22 | Which practice are they messaging? | D001, D006 | confirmed | Practice-linked WhatsApp line, personal/shared number |
+| [D016](D016-booking-for-someone-else.md) | 6 / Q23 | Booking for someone else | D006, D007 | confirmed | Communication contact can book for another patient |
+| [D017](D017-optional-conversational-intake.md) | 6 / Q24 | Intake without blocking booking | D007, D009 | confirmed | Reserve with minimum data; optional intake afterwards |
+| [D018](D018-linked-line-doctor-routing.md) | 7 / Q25 | Routing a linked line | D001, D015 | unanswered | Pending |
+| [D019](D019-contact-with-multiple-patient-profiles.md) | 7 / Q26 | Returning patients | D007, D016 | unanswered | Pending |
+| [D020](D020-patient-conversation-languages.md) | 7 / Q27 | Patient conversation languages | D006, D003 | unanswered | Pending |
+| [D021](D021-staff-takeover-of-patient-chat.md) | 7 / Q28 | Human takeover | D006, D011, D015 | unanswered | Pending |
 
 ## Current frontier
 
-Round 6: Q21 (D014 review deadline outside staffed hours), Q22 (D015 practice-specific/shared WhatsApp entry), Q23 (D016 booking for someone else), Q24 (D017 intake sequence and optionality). All prepared and unanswered.
+Round 7: Q25 (D018 line-to-doctor routing), Q26 (D019 reuse of verified returning-patient details), Q27 (D020 supported patient conversation languages), Q28 (D021 authorized human takeover). All prepared and unanswered.
 
 ## Unresolved or deferred branches
 
-After the confirmed holds/approval/sharing/replacement choices: review-clock behavior, conversation routing, caregiver booking and optional intake are the current questions. Later branches include exact identity verification, returning-patient matching, additional patient questions, conversation languages, availability configuration, staff handoff, notification failures, beta acceptance criteria, granular membership setup and first-increment location depth. Geography and later technical/translation choices remain in follow-ups. Sharing revocation and ordinary cancellation details remain open.
+Line doctor-routing, reuse of verified patient details, conversational language support and human takeover are the current questions. Later details include identity/representative verification, intake question configuration, practical patient questions beyond appointments, notification failures, availability configuration, beta acceptance criteria, membership/line onboarding, location depth, ordinary cancellation rules and sharing revocation. Geography, technical libraries, later AI translations and WhatsApp onboarding feasibility have durable follow-ups. Exact deadline/cutoff durations remain configurable rather than invented.
 
 ## Shared understanding
 
 The core patient journey is natural WhatsApp conversation: the agent handles appointment requests and appointment questions directly. A separate patient booking UI is not required. The agent reserves a slot provisionally; staff confirmation/rejection/changes determine the outcome, which the agent communicates. Staff have private management conversations and may explicitly share material; details remain open. Basic profiling includes identity/contact details, appointment history, patient-reported visit reasons, and short appointment-specific intake; full clinical-record features are outside the first increment. The accepted practice model, three roles, English code, EN/FR/AR/ES UI, and beta early access remain. Geography is explicitly deferred.
 
 Round 5 confirms exclusive pending holds with practice-configured expiry and patient notification on release; doctors and authorized receptionists handle routine review. Sharing initially means selected read-only messages to named authorized colleagues in the same practice. A patient must agree to a replacement time and may cancel if it does not fit their schedule. No monetary cancellation policy is inferred.
+
+Round 6: Medora attaches to a practice-linked external communication line, with WhatsApp the only initial app. A number may be personal or shared; account/API compatibility is not assumed. The line holder is the communication contact and may book for someone else. Minimum booking information permits a provisional hold; optional conversational intake follows without blocking staff confirmation. The user delegated Q21: use a staffed-hours review budget capped by a pre-appointment cutoff, releasing/notifying at the earlier limit. Numerical settings remain open.
 
 ## Final user confirmation
 
@@ -101,6 +108,8 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 
 [Beta operating countries](../../follow-ups/20261015T121349Z-choose-beta-operating-countries/follow-up.md).
 
+[WhatsApp linked-line onboarding research](../../follow-ups/20261015T142428Z-validate-whatsapp-linked-line-onboarding/follow-up.md).
+
 ## History
 
 - 2026-10-15T08:57:38Z — Assistant created session, recorded the supplied scope, and prepared round 1.
@@ -114,3 +123,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T13:46:49Z — Recorded round 4 replies, corrected the mistaken patient-UI framing, confirmed profile scope/private staff conversations/staff-reviewed reservations, and prepared round 5.
 
 - 2026-10-15T13:52:30Z — Saved round 5 replies; confirmed expiry, approval, sharing and patient replacement/cancellation choices; prepared round 6.
+
+- 2026-10-15T14:24:28Z — Saved round 6 replies, selected the delegated review-clock policy, clarified linked-line/contact concepts, and prepared round 7; integration feasibility is deferred.

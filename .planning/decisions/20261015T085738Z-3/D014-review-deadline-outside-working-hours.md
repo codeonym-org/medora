@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D014",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Requests outside opening hours",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 6,
   "created_at": "2026-10-15T13:52:30Z",
-  "updated_at": "2026-10-15T13:52:30Z",
+  "updated_at": "2026-10-15T14:24:28Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -28,7 +28,10 @@
   "follow_ups": [],
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D010-provisional-reservation-policy.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:24:28Z",
+  "selected_by": "assistant",
+  "selection_basis": "Explicit user delegation: q21: idk, you pick"
 }
 ---
 
@@ -48,27 +51,29 @@ Q21 — Requests outside opening hours: If a patient requests a slot while the p
 
 Count staffed working hours, and always end the hold before the appointment starts. Tell the patient when staff are expected to review it; do not promise a response time the practice cannot support.
 
-This is a recommendation, not an accepted choice. Alternatives remain open until the user replies.
+The current decision below records the reply. For Q21 the user delegated the choice; the rationale is attributed to the assistant. Earlier framing is retained as history.
 
 ## User reply — original words
 
-Pending. Prepared for round 6.
+Round 6 reply, recorded 2026-10-15T14:24:28Z; original message timestamp unavailable:
+
+> q21: idk, you pick
 
 ## Interpretation
 
-Pending.
+The user explicitly delegates the review-clock choice to the assistant. The following policy is an assistant selection under that delegation, not a verbatim user choice.
 
 ## Decision and rationale
 
-Pending.
+Selected under delegation: count the configured review budget only during staffed working hours, cap the hold at a practice-configured cutoff before the appointment starts, and expire at the earlier limit. Release the slot and notify the patient on expiry. State expected review timing honestly. Avoid offering a reservable slot if the practice cannot review it before its cutoff.
 
 ## Consequences and affected components
 
-Affected areas: Review deadlines, Provisional reservations, Patient expectations. Product detail depends on the user's choice.
+Selected under delegation: count the configured review budget only during staffed working hours, cap the hold at a practice-configured cutoff before the appointment starts, and expire at the earlier limit. Release the slot and notify the patient on expiry. State expected review timing honestly. Avoid offering a reservable slot if the practice cannot review it before its cutoff. The rationale is the assistant's: avoid overnight expiry caused solely by closed hours while preventing a pending reservation from surviving until/after the appointment. Exact numerical budgets, cutoff buffers and exceptional review coverage are practice settings; no default duration is invented.
 
 ## Assumptions, evidence, and open questions
 
-No review duration, routing convention, caregiver permission, or required intake field is silently selected. Technical stack choices remain excluded.
+The rationale is the assistant's: avoid overnight expiry caused solely by closed hours while preventing a pending reservation from surviving until/after the appointment. Exact numerical budgets, cutoff buffers and exceptional review coverage are practice settings; no default duration is invented.
 
 ## Extra notes and follow-ups
 
@@ -77,3 +82,5 @@ No unrelated follow-up introduced by this question.
 ## History
 
 - 2026-10-15T13:52:30Z — Assistant prepared the round 6 question from confirmed prerequisites.
+
+- 2026-10-15T14:24:28Z — Saved round 6 reply and current decision. Prior interpretation: Pending. Prior decision: Pending.

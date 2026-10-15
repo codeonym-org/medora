@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D016",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Booking for someone else",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 6,
   "created_at": "2026-10-15T13:52:30Z",
-  "updated_at": "2026-10-15T13:52:30Z",
+  "updated_at": "2026-10-15T14:24:28Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -30,7 +30,8 @@
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D006-booking-entry.md",
     ".planning/decisions/20261015T085738Z-3/D007-basic-patient-profile.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:24:28Z"
 }
 ---
 
@@ -50,27 +51,29 @@ Q23 — Booking for someone else: Should the first version let a parent or careg
 
 Yes: distinguish the person chatting from the patient being booked. Ask who the appointment is for, and verify authorization before revealing an existing patient's information; a matching phone number alone is insufficient.
 
-This is a recommendation, not an accepted choice. Alternatives remain open until the user replies.
+The current decision below records the reply. For Q21 the user delegated the choice; the rationale is attributed to the assistant. Earlier framing is retained as history.
 
 ## User reply — original words
 
-Pending. Prepared for round 6.
+Round 6 reply, recorded 2026-10-15T14:24:28Z; original message timestamp unavailable:
+
+> q23: yeah its possible and the line holder is the communication channel
 
 ## Interpretation
 
-Pending.
+The user confirms booking for someone else. The holder/sender of the WhatsApp line is the communication contact, which can be different from the patient. A contact can therefore communicate about bookings for another person. This does not automatically authorize that contact to view every existing patient record.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: support booking on behalf of another person and keep the communication contact separate from the patient profile. Deliver the booking conversation through the contact's line.
 
 ## Consequences and affected components
 
-Affected areas: Patient identity, Profile matching, Caregiver booking. Product detail depends on the user's choice.
+Confirmed: support booking on behalf of another person and keep the communication contact separate from the patient profile. Deliver the booking conversation through the contact's line. Returning-patient matching, multiple patients per contact, representative authorization, corrections, and what existing information can be disclosed remain to be defined. A phone number is a communication endpoint, not by itself proof of patient identity or guardianship.
 
 ## Assumptions, evidence, and open questions
 
-No review duration, routing convention, caregiver permission, or required intake field is silently selected. Technical stack choices remain excluded.
+Returning-patient matching, multiple patients per contact, representative authorization, corrections, and what existing information can be disclosed remain to be defined. A phone number is a communication endpoint, not by itself proof of patient identity or guardianship.
 
 ## Extra notes and follow-ups
 
@@ -79,3 +82,5 @@ No unrelated follow-up introduced by this question.
 ## History
 
 - 2026-10-15T13:52:30Z — Assistant prepared the round 6 question from confirmed prerequisites.
+
+- 2026-10-15T14:24:28Z — Saved round 6 reply and current decision. Prior interpretation: Pending. Prior decision: Pending.

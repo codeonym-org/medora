@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D017",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Intake without blocking booking",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 6,
   "created_at": "2026-10-15T13:52:30Z",
-  "updated_at": "2026-10-15T13:52:30Z",
+  "updated_at": "2026-10-15T14:24:28Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -30,7 +30,8 @@
   "sources": [
     ".planning/decisions/20261015T085738Z-3/D007-basic-patient-profile.md",
     ".planning/decisions/20261015T085738Z-3/D009-routine-booking-authority.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:24:28Z"
 }
 ---
 
@@ -50,27 +51,29 @@ Q24 — Intake without blocking booking: Should Medora reserve the slot once it 
 
 Yes. Keep booking easy, collect only relevant context, and show staff what is missing. Unanswered optional intake should not by itself prevent staff from confirming.
 
-This is a recommendation, not an accepted choice. Alternatives remain open until the user replies.
+The current decision below records the reply. For Q21 the user delegated the choice; the rationale is attributed to the assistant. Earlier framing is retained as history.
 
 ## User reply — original words
 
-Pending. Prepared for round 6.
+Round 6 reply, recorded 2026-10-15T14:24:28Z; original message timestamp unavailable:
+
+> q24: ok
 
 ## Interpretation
 
-Pending.
+The user accepts reserving once the minimum booking information is available, then gathering short relevant intake conversationally. Nonessential questions can be skipped, and missing optional intake alone does not block staff confirmation.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: minimum booking data first, provisional reservation next, then brief conversational intake with optional nonessential questions and visible missing-information status for staff.
 
 ## Consequences and affected components
 
-Affected areas: WhatsApp booking, Patient intake, Staff preparation. Product detail depends on the user's choice.
+Confirmed: minimum booking data first, provisional reservation next, then brief conversational intake with optional nonessential questions and visible missing-information status for staff. Exact required booking fields, appointment-specific approved questions, and when staff sees incomplete intake remain product details. Skipping optional intake is not evidence that there are no concerns; existing safety/escalation boundaries remain in force.
 
 ## Assumptions, evidence, and open questions
 
-No review duration, routing convention, caregiver permission, or required intake field is silently selected. Technical stack choices remain excluded.
+Exact required booking fields, appointment-specific approved questions, and when staff sees incomplete intake remain product details. Skipping optional intake is not evidence that there are no concerns; existing safety/escalation boundaries remain in force.
 
 ## Extra notes and follow-ups
 
@@ -79,3 +82,5 @@ No unrelated follow-up introduced by this question.
 ## History
 
 - 2026-10-15T13:52:30Z — Assistant prepared the round 6 question from confirmed prerequisites.
+
+- 2026-10-15T14:24:28Z — Saved round 6 reply and current decision. Prior interpretation: Pending. Prior decision: Pending.
