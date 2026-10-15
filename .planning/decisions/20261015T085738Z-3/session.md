@@ -5,7 +5,7 @@
   "title": "Medora product functionality and initial scope",
   "status": "active",
   "created_at": "2026-10-15T08:57:38Z",
-  "updated_at": "2026-10-15T14:45:47Z",
+  "updated_at": "2026-10-15T14:52:33Z",
   "repository": "codeonym-org/medora",
   "issue_number": 3,
   "issue_url": "https://github.com/codeonym-org/medora/issues/3",
@@ -81,18 +81,22 @@ These later branches are candidate questions, not assumed decisions; refine thei
 | [D023](D023-handoff-staff-assignment.md) | 8 / Q30 | Which staff joins? | D001, D011, D021 | confirmed | Default staff member configured in Medora |
 | [D024](D024-agent-context-during-human-handoff.md) | 8 / Q31 | Agent awareness during handoff | D007, D021 | confirmed | Silent authorized context; invoked/returned replies only |
 | [D025](D025-remembered-language-preference-owner.md) | 8 / Q32 | Whose language preference? | D016, D020 | confirmed | Preference belongs to speaking user/contact |
-| [D026](D026-initial-availability-source.md) | 9 / Q33 | Where does availability come from? | D002, D009, D018 | unanswered | Pending |
-| [D027](D027-approved-practice-information.md) | 9 / Q34 | Questions beyond appointments | D006, D023 | unanswered | Pending |
-| [D028](D028-notification-failure-after-confirmation.md) | 9 / Q35 | A confirmation message fails | D009, D013, D015 | unanswered | Pending |
-| [D029](D029-first-contact-existing-record-access.md) | 9 / Q36 | Access to existing patient information | D016, D019 | unanswered | Pending |
+| [D026](D026-initial-availability-source.md) | 9 / Q33 | Where does availability come from? | D002, D009, D018 | confirmed | Medora schedule initially; external sync later |
+| [D027](D027-approved-practice-information.md) | 9 / Q34 | Questions beyond appointments | D006, D023 | confirmed | Approved practical answers; reduce patient embarrassment |
+| [D028](D028-notification-failure-after-confirmation.md) | 9 / Q35 | A confirmation message fails | D009, D013, D015 | confirmed | Keep booking confirmed; delivery failures visible/retried |
+| [D029](D029-first-contact-existing-record-access.md) | 9 / Q36 | Access to existing patient information | D016, D019 | confirmed | Staff verifies uncertain access to existing records |
+| [D030](D030-staff-daily-workspace.md) | 10 / Q37 | The staff workspace | D007, D009, D026 | unanswered | Pending |
+| [D031](D031-practice-setup-before-activation.md) | 10 / Q38 | Practice setup | D015, D023, D026 | unanswered | Pending |
+| [D032](D032-first-increment-appointment-lifecycle.md) | 10 / Q39 | Changes and cancellations in beta | D002, D006, D013, D029 | unanswered | Pending |
+| [D033](D033-intake-template-and-profile-review.md) | 10 / Q40 | Who controls intake? | D007, D017, D027 | unanswered | Pending |
 
 ## Current frontier
 
-Round 9: Q33 (D026 initial availability source), Q34 (D027 approved practical practice information), Q35 (D028 message-delivery failure after booking confirmation), Q36 (D029 first-contact access to existing patient information). All prepared and unanswered.
+Round 10: Q37 (D030 direct staff workspace views), Q38 (D031 setup before activation), Q39 (D032 initial cancellation/rescheduling scope), Q40 (D033 doctor-owned intake and profile correction). All prepared and unanswered.
 
 ## Unresolved or deferred branches
 
-Initial availability operations, practical patient questions, notification failures and first-time identity checks are the current questions. Remaining branches include minimum configuration/onboarding, first-increment appointment-change/cancellation scope, intake-template ownership and presentation, default-staff reassignment/unavailability, group lifecycle and invocation mechanics, sharing revocation and beta acceptance criteria. Exact numerical practice policies remain configuration requirements, not invented facts. Country selection, library/model choices and supported WhatsApp onboarding modes remain in follow-ups. Optional group details remain subject to eligibility and integration verification.
+The current questions define the initial staff workspace, onboarding readiness, basic appointment lifecycle and intake ownership. Remaining detailed branches include beta acceptance, role/configuration ownership, default-staff unavailability, exact verification evidence, group lifecycle/invocation, sharing revocation, retry/failed-delivery escalation and ordinary cancellation rules. Country and technical integration/library choices remain in follow-ups. No policy value or delivery date is invented.
 
 ## Shared understanding
 
@@ -105,6 +109,8 @@ Round 6: Medora attaches to a practice-linked external communication line, with 
 Round 7 confirms line-to-doctor/group routing and reuse of verified returning-patient details. The agent replies in the user's own language, remembers it until changed, and is not limited to the four UI locales by that instruction. Human takeover is confirmed. A per-patient group with staff and tag-driven awareness is a proposal, not an accepted universal mechanism; account eligibility, invitation limits and unverified native tagging need to be reflected in the design.
 
 Round 8 confirms optional patient groups for eligible consenting participants, with a one-to-one human handoff fallback. Handoffs target a default staff member configured on Medora, not all staff or necessarily a receptionist. Medora retains authorized context silently during human ownership and replies on invocation/control return; that does not authorize state changes. Remembered language belongs to the speaking account/contact, separately from the represented patient.
+
+Round 9: Medora holds the initial authoritative schedule; external calendar sync can come later. The agent answers approved practical practice questions, with the user identifying reduced embarrassment as a benefit. Confirmed appointment status survives a notification failure; staff see the failure and retries follow policy. Staff verify uncertain/new contact-patient relationships before existing-record access or booking changes; new requests can enter review without disclosure.
 
 ## Final user confirmation
 
@@ -143,3 +149,5 @@ Issue: https://github.com/codeonym-org/medora/issues/3. Draft PR: https://github
 - 2026-10-15T14:38:24Z — Saved round 7 replies, researched the proposed group flow against official documentation, and prepared round 8 without treating tentative group behavior as confirmed.
 
 - 2026-10-15T14:45:47Z — Saved round 8 choices, including user-configured default staff, and prepared round 9 core workflow questions.
+
+- 2026-10-15T14:52:33Z — Saved round 9 choices and the product owner's embarrassment rationale; prepared round 10 for initial staff/practice workflows.

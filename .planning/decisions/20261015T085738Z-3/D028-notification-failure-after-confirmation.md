@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D028",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "A confirmation message fails",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 9,
   "created_at": "2026-10-15T14:45:47Z",
-  "updated_at": "2026-10-15T14:45:47Z",
+  "updated_at": "2026-10-15T14:52:33Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -33,7 +33,8 @@
     ".planning/decisions/20261015T085738Z-3/D013-replacement-slot-agreement.md",
     ".planning/decisions/20261015T085738Z-3/D015-practice-and-doctor-routing.md",
     "docs/product-vision.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:52:33Z"
 }
 ---
 
@@ -53,27 +54,29 @@ Q35 — A confirmation message fails: If staff confirms an appointment but the W
 
 Yes. Track appointment status and message delivery separately. Alert staff, retry according to policy, and do not silently cancel or claim the patient was informed.
 
-This is an assistant recommendation pending the user's choice.
+The user accepted the current choice in the recorded reply. Details not supplied remain explicitly open.
 
 ## User reply — original words
 
-Pending. Prepared for round 9.
+Round 9 reply, recorded 2026-10-15T14:52:33Z; original message timestamp unavailable:
+
+> q35: ok
 
 ## Interpretation
 
-Pending.
+The user accepts keeping the successfully confirmed appointment while tracking a failed WhatsApp notification separately, notifying staff and retrying under policy. Failure to deliver does not silently undo the booking.
 
 ## Decision and rationale
 
-Pending.
+Confirmed: appointment state and notification-delivery state are separate; preserve the confirmed booking, surface failed delivery to staff, and retry according to practice/system policy without claiming the patient was informed.
 
 ## Consequences and affected components
 
-Appointment state, Notification delivery, Staff attention queue. The answer will define the corresponding first-increment workflow.
+Confirmed: appointment state and notification-delivery state are separate; preserve the confirmed booking, surface failed delivery to staff, and retry according to practice/system policy without claiming the patient was informed. Retry timing, limits, escalation, alternative contact methods and what staff do if delivery never succeeds remain open. No guaranteed delivery or automatic alternate-channel consent is inferred.
 
 ## Assumptions, evidence, and open questions
 
-No external integration, practice-specific factual answer, notification delivery guarantee or identity-verification method is selected or asserted. Technical stack choices remain excluded.
+Retry timing, limits, escalation, alternative contact methods and what staff do if delivery never succeeds remain open. No guaranteed delivery or automatic alternate-channel consent is inferred.
 
 ## Extra notes and follow-ups
 
@@ -82,3 +85,5 @@ The wider feature register remains intact. No unrelated follow-up introduced by 
 ## History
 
 - 2026-10-15T14:45:47Z — Prepared the round 9 question from confirmed prerequisites.
+
+- 2026-10-15T14:52:33Z — Saved round 9 reply and confirmed the choice. Prior interpretation: Pending. Prior decision: Pending.

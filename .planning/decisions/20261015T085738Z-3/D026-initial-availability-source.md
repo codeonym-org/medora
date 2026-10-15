@@ -4,10 +4,10 @@
   "id": "20261015T085738Z-3/D026",
   "session": ".planning/decisions/20261015T085738Z-3/session.md",
   "title": "Where does availability come from?",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 9,
   "created_at": "2026-10-15T14:45:47Z",
-  "updated_at": "2026-10-15T14:45:47Z",
+  "updated_at": "2026-10-15T14:52:33Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -33,7 +33,8 @@
     ".planning/decisions/20261015T085738Z-3/D009-routine-booking-authority.md",
     ".planning/decisions/20261015T085738Z-3/D018-linked-line-doctor-routing.md",
     "docs/product-vision.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-15T14:52:33Z"
 }
 ---
 
@@ -53,27 +54,29 @@ Q33 — Where does availability come from?: For the first version, should doctor
 
 Use Medora as the scheduling source for the first increment, with authorized staff maintaining real availability there. Preserve external calendar synchronization in the feature register for later.
 
-This is an assistant recommendation pending the user's choice.
+The user accepted the current choice in the recorded reply. Details not supplied remain explicitly open.
 
 ## User reply — original words
 
-Pending. Prepared for round 9.
+Round 9 reply, recorded 2026-10-15T14:52:33Z; original message timestamp unavailable:
+
+> q33: yeah for starter
 
 ## Interpretation
 
-Pending.
+The user accepts Medora as the initial scheduling source, with doctors/authorized staff managing real working hours, breaks, blocks and appointments there. External calendar synchronization remains planned for later rather than required at launch.
 
 ## Decision and rationale
 
-Pending.
+Confirmed initial workflow: manage the authoritative schedule directly in Medora. External calendar integrations stay in the feature register for a future increment.
 
 ## Consequences and affected components
 
-Availability setup, Doctor calendar, Booking source of truth. The answer will define the corresponding first-increment workflow.
+Confirmed initial workflow: manage the authoritative schedule directly in Medora. External calendar integrations stay in the feature register for a future increment. Minimum setup, appointment-type durations, doctor-specific working hours, migration of existing commitments and operational schedule maintenance remain to be specified. No external calendar provider or stack is selected.
 
 ## Assumptions, evidence, and open questions
 
-No external integration, practice-specific factual answer, notification delivery guarantee or identity-verification method is selected or asserted. Technical stack choices remain excluded.
+Minimum setup, appointment-type durations, doctor-specific working hours, migration of existing commitments and operational schedule maintenance remain to be specified. No external calendar provider or stack is selected.
 
 ## Extra notes and follow-ups
 
@@ -82,3 +85,5 @@ The wider feature register remains intact. No unrelated follow-up introduced by 
 ## History
 
 - 2026-10-15T14:45:47Z — Prepared the round 9 question from confirmed prerequisites.
+
+- 2026-10-15T14:52:33Z — Saved round 9 reply and confirmed the choice. Prior interpretation: Pending. Prior decision: Pending.

@@ -9,9 +9,9 @@ Keep the full vision discoverable while delivering incrementally. This register 
 | Doctor, Receptionist, Patient roles | Confirmed product roles | Role-specific permissions, memberships and journeys |
 | English, French, Arabic, Spanish UI | Initial language list confirmed | Locale variants, language switching, translation review |
 | Beta-user early access | Confirmed rollout stage | Recruitment, beta scope, success measures, exit criteria |
-| Availability and calendar management | In product vision; needed to support booking | Minimal first-increment controls and calendar views |
+| Availability and calendar management | Medora is initial scheduling source, confirmed | Minimum setup, controls and calendar views |
 | Rescheduling and cancellation | In product vision; release assignment open | Patient agreement to replacement and ability to cancel confirmed; ordinary cancellation details open |
-| Booking confirmations | Staff approval required after provisional reservation | Authorized staff review and staffed-hours/cutoff policy chosen; numerical settings and delivery failures open |
+| Booking confirmations | Staff approval required after provisional reservation | Authorized staff review and staffed-hours/cutoff policy chosen; numerical settings open; confirmed booking survives visible/retried delivery failure |
 | Reminders and notification preferences | Preserved planned capability; sequencing open | Timing, channels, opt-in behavior |
 | Short patient intake and structured summaries | In product vision; profiling boundary being clarified | Required/optional fields, attribution, summary depth |
 | Pre-consultation briefing and daily overview | Preserved planned capability; sequencing open | First-release breadth, presentation, update timing |
@@ -27,10 +27,11 @@ Keep the full vision discoverable while delivering incrementally. This register 
 | Practice-linked communication line | WhatsApp only initially; personal/shared number requirement confirmed | Doctor/group routing confirmed; supported onboarding paths and handoff mechanism open |
 | Booking for someone else | Communication contact may differ from patient, confirmed | Multiple-profile handling and authorization details |
 | Optional conversational intake | After minimum-data reservation; nonessential answers may be skipped | Exact fields and practice templates |
-| Returning-patient convenience | Reuse verified contact-patient details, confirmed | Matching, re-verification and correction details |
+| Returning-patient convenience | Reuse verified contact-patient details, confirmed | Staff verifies uncertain relationships before existing-record access/changes; exact evidence/corrections open |
 | Agent language preference | Reply in user language and remember until changed, confirmed | Speaking-account/contact owner confirmed; uncertain/unsupported language handling open |
 | Human takeover | Confirmed capability | Configured default staff and silent context confirmed; transfer/failure details open |
 | Per-patient WhatsApp groups | Optional for eligible consenting participants; one-to-one fallback confirmed | Configured default staff; invitations, tags and lifecycle details open |
+| Practical practice questions | Approved hours/address/fees/preparation answers confirmed | Information maintenance, review and uncertainty handling |
 | AI-generated additional translations | User-requested extension capability | Generation, review, publication, fallback behavior |
 
 Safety, privacy, provenance, authorization, and truthful operation reporting remain cross-cutting requirements, as documented in AGENTS.md. No feature is implemented by virtue of appearing here. Update this register as decisions become explicit; preserve the record of changed or rejected scope.
