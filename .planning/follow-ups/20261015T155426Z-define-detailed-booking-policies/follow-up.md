@@ -6,7 +6,7 @@
   "kind": "question",
   "status": "in-progress",
   "created_at": "2026-10-15T15:54:26Z",
-  "updated_at": "2026-10-15T16:38:00Z",
+  "updated_at": "2026-10-16T10:18:23Z",
   "observed_at": null,
   "reported_by": "assistant; deferral explicitly accepted by user in Q47",
   "owner": null,
@@ -33,7 +33,8 @@
     ".planning/decisions/20261015T085738Z-3/D032-first-increment-appointment-lifecycle.md",
     ".planning/decisions/20261015T085738Z-3/D035-verified-patient-cancellation.md",
     ".planning/decisions/20261015T085738Z-3/D037-keep-original-during-rescheduling.md",
-    ".planning/decisions/20261015T085738Z-3/D039-focused-design-followups.md"
+    ".planning/decisions/20261015T085738Z-3/D039-focused-design-followups.md",
+    ".planning/decisions/20261015T163800Z-5/D003-request-after-reservation-expiry.md"
   ],
   "dependencies": [
     ".planning/decisions/20261015T085738Z-3/scope-review.md"
@@ -110,3 +111,5 @@ Pending. The deferral is accepted; the detailed choices and implementation are n
 - 2026-10-15T15:54:26Z — Created from the user-approved Q47 deferral; no external outreach, integration changes or application implementation occurred.
 
 - 2026-10-15T16:38:00Z — Domain-modeling portion started in issue #5 and session 20261015T163800Z-5. Status is in-progress; this does not claim all detailed policies or permissions are being resolved.
+
+- 2026-10-16T10:18:23Z — Accepted domain relationships are recorded in session 20261015T163800Z-5: D003. Detailed policies and implementation acceptance remain open.

@@ -6,7 +6,7 @@
   "kind": "question",
   "status": "in-progress",
   "created_at": "2026-10-15T15:54:26Z",
-  "updated_at": "2026-10-15T16:38:00Z",
+  "updated_at": "2026-10-16T10:18:23Z",
   "observed_at": null,
   "reported_by": "assistant; deferral explicitly accepted by user in Q47",
   "owner": null,
@@ -34,7 +34,9 @@
     ".planning/decisions/20261015T085738Z-3/D019-contact-with-multiple-patient-profiles.md",
     ".planning/decisions/20261015T085738Z-3/D029-first-contact-existing-record-access.md",
     ".planning/decisions/20261015T085738Z-3/D034-practice-configuration-ownership.md",
-    ".planning/decisions/20261015T085738Z-3/D039-focused-design-followups.md"
+    ".planning/decisions/20261015T085738Z-3/D039-focused-design-followups.md",
+    ".planning/decisions/20261015T163800Z-5/D001-staff-identity-and-membership.md",
+    ".planning/decisions/20261015T163800Z-5/D002-shared-contact-point.md"
   ],
   "dependencies": [
     ".planning/decisions/20261015T085738Z-3/scope-review.md"
@@ -113,3 +115,5 @@ Pending. The deferral is accepted; the detailed choices and implementation are n
 - 2026-10-15T15:54:26Z — Created from the user-approved Q47 deferral; no external outreach, integration changes or application implementation occurred.
 
 - 2026-10-15T16:38:00Z — Domain-modeling portion started in issue #5 and session 20261015T163800Z-5. Status is in-progress; this does not claim all detailed policies or permissions are being resolved.
+
+- 2026-10-16T10:18:23Z — Accepted domain relationships are recorded in session 20261015T163800Z-5: D001, D002. Detailed policies and implementation acceptance remain open.

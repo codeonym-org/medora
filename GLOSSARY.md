@@ -8,8 +8,12 @@ The language of coordinating a practice, its patients, and its appointments. The
 The organization whose doctors, staff, schedules, and patient information are managed together in Medora. A solo practice and a clinic organization are both practices.
 _Avoid_: Clinic when it could mean either the organization or one of its locations; tenant in product language.
 
+**Staff Account**:
+A person's authenticated staff identity in Medora, which may participate in several practices through separate memberships.
+_Avoid_: Practice Membership when referring to the staff identity itself.
+
 **Practice Membership**:
-A person's participation in a particular practice, with the roles and permissions granted there.
+A Staff Account's participation in a particular practice, with one or more roles and the permissions granted there.
 _Avoid_: Global role when describing authority in one practice.
 
 **Practice Owner**:
@@ -32,6 +36,10 @@ _Avoid_: WhatsApp user; phone-number holder as a synonym for Patient.
 The person communicating with the practice about an appointment or patient. A contact may communicate for themselves or for another patient.
 _Avoid_: Patient when the speaker and recipient of care may differ; phone number as a synonym for the person.
 
+**Contact Point**:
+An address through which a Communication Contact can be reached, such as a WhatsApp number; several contacts may share one. The address alone does not establish who is speaking or their authority over a patient.
+_Avoid_: Communication Contact for an address; Communication Line for a patient-side address.
+
 **Patient Profile**:
 A practice's organized administrative information about a patient, including appointment context and attributed patient-reported information.
 _Avoid_: Full medical record; global patient account.
@@ -39,7 +47,7 @@ _Avoid_: Full medical record; global patient account.
 ## Scheduling
 
 **Appointment Request**:
-A request to arrange a consultation, expressing the patient's needs and scheduling preferences.
+A request to arrange a consultation, expressing the patient's needs and scheduling preferences. It is distinct from any temporary reservation made for it.
 _Avoid_: Confirmed appointment; Reservation when referring to the request itself.
 
 **Reservation**:

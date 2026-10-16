@@ -4,10 +4,10 @@
   "id": "20261015T163800Z-5/D002",
   "session": ".planning/decisions/20261015T163800Z-5/session.md",
   "title": "A shared patient-side number",
-  "status": "unanswered",
+  "status": "confirmed",
   "round": 1,
   "created_at": "2026-10-15T16:38:00Z",
-  "updated_at": "2026-10-15T16:38:00Z",
+  "updated_at": "2026-10-16T10:18:23Z",
   "asked_at": null,
   "answered_at": null,
   "confirmed_at": null,
@@ -26,7 +26,8 @@
   "affected_components": [
     "Communication Contact",
     "Patient",
-    "Patient Profile"
+    "Patient Profile",
+    "Contact Point"
   ],
   "follow_ups": [],
   "sources": [
@@ -36,7 +37,9 @@
     ".planning/decisions/20261015T085738Z-3/D029-first-contact-existing-record-access.md",
     "GLOSSARY.md",
     "docs/domain-model.md"
-  ]
+  ],
+  "reply_recorded_at": "2026-10-16T10:18:23Z",
+  "reply_reference": "Joint user reply: ok, next; in response to the three first-round recommendations"
 }
 ---
 
@@ -61,19 +64,25 @@ Two parents use the same WhatsApp number to arrange appointments for their child
 
 Yes. Model a contact address separately from the person. If the actual speaker is unclear, ask or leave identity unverified; never infer representative authority or a person-specific preference solely from the shared number.
 
-This is a proposed domain relationship, not a confirmed user choice or implementation decision.
+This was the recommendation presented before the joint reply; the acceptance and its limited interpretation are recorded below.
 
 ## User reply — original words
 
-Pending. Prepared for the first domain-modeling round.
+Joint reply to the first three modeling recommendations, recorded 2026-10-16T10:18:23Z; original message timestamp unavailable:
+
+> ok, next
 
 ## Interpretation
 
-Pending.
+Read as acceptance of the three recommendations just presented and a request to continue. This is a joint acknowledgment, not three separately worded answers. For this decision: Separate Communication Contacts may share a Contact Point. A shared address alone establishes neither the speaker, representative authority nor a person-specific preference; ask or leave identity unverified when uncertain.
+
+No additional policy values, verification method or implementation choices are inferred.
 
 ## Decision and rationale
 
-Pending.
+Confirmed within this scenario: Separate Communication Contacts may share a Contact Point. A shared address alone establishes neither the speaker, representative authority nor a person-specific preference; ask or leave identity unverified when uncertain.
+
+The user supplied no separate rationale. The recommendation and its reasoning above are assistant-authored.
 
 ## Consequences and affected components
 
@@ -81,7 +90,7 @@ Communication Contact, Patient, Patient Profile. The reply will sharpen terminol
 
 ## Assumptions, evidence, and open questions
 
-No database schema, account implementation, global person-matching scheme, automatic verification or request-closure policy is assumed. No application code exists to cross-check.
+The joint reply confirms the relationship described above. No database schema, account implementation, global person-matching scheme or automatic verification method is selected. Detailed permissions and independent request-closure policies remain open. No application code exists to cross-check.
 
 ## Extra notes and follow-ups
 
@@ -90,3 +99,5 @@ The booking-policy and identity/permissions follow-ups remain open; vocabulary w
 ## History
 
 - 2026-10-15T16:38:00Z — Prepared this scenario from the confirmed foundation; user response pending.
+
+- 2026-10-16T10:18:23Z — Saved the joint reply verbatim and recorded its acceptance of the existing recommendation; no additional commitments inferred.
